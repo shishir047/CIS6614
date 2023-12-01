@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vul4j
+Version: 1.0
+Summary: Vul4J: A Dataset of Reproducible Java Vulnerabilities.
+Home-page: https://github.com/bqcuong/vul4j
+Author: Quang-Cuong Bui
+Author-email: cuong.bui@tuhh.de
+License: MIT
+License-File: LICENSE

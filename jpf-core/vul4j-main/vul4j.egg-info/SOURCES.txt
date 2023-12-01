@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+vul4j/__init__.py
+vul4j/config.py
+vul4j/main.py
+vul4j.egg-info/PKG-INFO
+vul4j.egg-info/SOURCES.txt
+vul4j.egg-info/dependency_links.txt
+vul4j.egg-info/entry_points.txt
+vul4j.egg-info/requires.txt
+vul4j.egg-info/top_level.txt
