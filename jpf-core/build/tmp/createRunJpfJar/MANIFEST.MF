@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: Java Pathfinder core launch system
+Main-Class: gov.nasa.jpf.tool.RunJPF
+Built-By: shish
+Implementation-Vendor: NASA Ames Research Center
+Implementation-Version: DEVELOPMENT-SNAPSHOT
+
