@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.mc.threads.DeadlockTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.mc.threads.DeadlockTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.mc.threads.html">gov.nasa.jpf.test.mc.threads</a> &gt; DeadlockTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.056s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testLockOrderDeadlock</td>
+<td class="success">0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMissedSignalDeadlock</td>
+<td class="success">0.466s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMixedDeadlock</td>
+<td class="success">0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNestedMonitorLockoutDeadlock</td>
+<td class="success">0.095s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleMissedSignal</td>
+<td class="success">0.109s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncBlockDeadlock</td>
+<td class="success">0.068s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSyncMthDeadlock</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTerminationDeadlock</td>
+<td class="success">0.116s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread gov.nasa.jpf.test.mc.threads.DeadlockTest$FirstTask:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  thread gov.nasa.jpf.test.mc.threads.DeadlockTest$SecondTask:{id:2,name:Thread-2,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.mc.threads.DeadlockTest$FirstTask:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  waiting on: gov.nasa.jpf.test.mc.threads.DeadlockTest$Event@21e
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$Event.wait_for_event(DeadlockTest.java:60)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$FirstTask.run(DeadlockTest.java:86)
+
+thread gov.nasa.jpf.test.mc.threads.DeadlockTest$SecondTask:{id:2,name:Thread-2,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  waiting on: gov.nasa.jpf.test.mc.threads.DeadlockTest$Event@21f
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$Event.wait_for_event(DeadlockTest.java:60)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SecondTask.run(DeadlockTest.java:117)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread gov.nasa.jpf.test....&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t1 finished
+t2 finished
+t2 finished
+t1 finished
+t2 finished
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  waiting on: java.lang.Object@201
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$5.run(DeadlockTest.java:265)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main thread terminating
+# t running
+# t waiting (forever)..
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread gov.nasa.jpf.test.mc.threads.DeadlockTest$7:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.mc.threads.DeadlockTest$7:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  waiting on: gov.nasa.jpf.test.mc.threads.DeadlockTest$7@21e
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$7.run(DeadlockTest.java:384)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread gov.nasa.jpf.test....&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  owned locks:java.lang.Object@200
+  waiting on: java.lang.Object@201
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$3.run(DeadlockTest.java:225)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Object@201
+  blocked on: java.lang.Object@200
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$4.run(DeadlockTest.java:241)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@221
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@222
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.doSomething(DeadlockTest.java:129)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.run(DeadlockTest.java:144)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@222
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@221
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.doSomething(DeadlockTest.java:129)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.run(DeadlockTest.java:144)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t1 finished
+t2 finished
+t2 finished
+t1 finished
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Object@1fe
+  blocked on: java.lang.Object@1ff
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$1.run(DeadlockTest.java:183)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Object@1ff
+  blocked on: java.lang.Object@1fe
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$2.run(DeadlockTest.java:196)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@225
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@221
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.run(DeadlockTest.java:144)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@221
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable@225
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncBlockRunnable.doSomething(DeadlockTest.java:129)
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable.run(DeadlockTest.java:164)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DeadlockTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@221
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@222
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable.run(DeadlockTest.java:164)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@222
+  blocked on: gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable@221
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DeadlockTest$SyncMthRunnable.run(DeadlockTest.java:164)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:36 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.vm.threads.SuspendResumeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.vm.threads.SuspendResumeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.vm.threads.html">gov.nasa.jpf.test.vm.threads</a> &gt; SuspendResumeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.975s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBasicSuspendDeadlock</td>
+<td class="success">0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBasicSuspendResume</td>
+<td class="success">0.116s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBlockSuspendUnblockDeadlock</td>
+<td class="success">0.120s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBlockSuspendUnblockResume</td>
+<td class="success">0.063s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLockholderSuspendDeadlock</td>
+<td class="success">0.100s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWaitingSuspendNotifyDeadlock</td>
+<td class="success">0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWaitingSuspendNotifyResume</td>
+<td class="success">0.455s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t3 running
+main suspending t3
+main notifying t3
+main resuming t3
+main joining t3
+t3 terminating
+main terminating after t3.join
+main suspending t3
+main notifying t3
+main resuming t3
+main joining t3
+t3 running
+main suspending t3
+main notifying t3
+main resuming t3
+main joining t3
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t2 running with lock
+main suspending t2
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T2:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  blocked on: gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T2@21c
+  call stack:
+	at gov.nasa.jpf.test.vm.threads.SuspendResumeTest.testLockholderSuspendDeadlock(SuspendResumeTest.java:125)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T2:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+  owned locks:gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T2@21c
+  call stack:
+	at gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T2.run(SuspendResumeTest.java:103)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread java.lang.Thread:{...&quot;
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t1 running
+main suspending t1
+main resuming t1
+main joining t1
+t1 terminating
+main terminating after t1.join
+t1 terminating
+main joining t1
+main terminating after t1.join
+main suspending t1
+main resuming t1
+main joining t1
+t1 terminating
+t1 running
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t4 running 
+t4 trying to obtain lock
+main suspending t4
+main released t4 lock
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T4:{id:1,name:Thread-1,status:UNBLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T4:{id:1,name:Thread-1,status:UNBLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+  call stack:
+	at gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T4.run(SuspendResumeTest.java:217)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread gov.nasa.jpf.test....&quot;
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t3 running
+main suspending t3
+main notifying t3
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T3:{id:1,name:Thread-1,status:UNBLOCKED,priority:5,isDaemon:false,lockCount:1,suspendCount:1}
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T3:{id:1,name:Thread-1,status:UNBLOCKED,priority:5,isDaemon:false,lockCount:1,suspendCount:1}
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T3.run(SuspendResumeTest.java:139)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread gov.nasa.jpf.test....&quot;
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t4 running 
+t4 trying to obtain lock
+main suspending t4
+main released t4 lock
+main resuming t4
+main joining t4
+t4 obtained lock
+t4 terminating
+main terminating after t4.join
+t4 obtained lock
+t4 terminating
+main joining t4
+main terminating after t4.join
+t4 running 
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_yield
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.SuspendResumeTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+t1 running
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T1:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T1:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:1}
+  call stack:
+	at gov.nasa.jpf.test.vm.threads.SuspendResumeTest$T1.run(SuspendResumeTest.java:38)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty &quot;deadlock encountered:    thread gov.nasa.jpf.test....&quot;
+
+====================================================== search finished: 11/26/23, 2:37 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.util.event.EventTreeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.util.event.EventTreeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.util.event.html">gov.nasa.jpf.util.event</a> &gt; EventTreeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.022s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddPath</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCombinationTree</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMaxDepth</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMerge</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPermutationTree</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemove</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleTree</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>event tree: 
+a
+. 1
+. . b
+. x
+. . x
+. . . b
+checking path: &quot;a1b&quot;   OK
+checking path: &quot;axxb&quot;   OK
+event tree: 
+a
+. b
+. . c
+. . 3
+checking path: &quot;abc&quot;   OK
+checking path: &quot;ab3&quot;   OK
+event tree: 
+1
+. 2
+. . 3
+. . . a
+. . . . b
+. . . . . c
+. . a
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. a
+. . 2
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . b
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+a
+. 1
+. . 2
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . b
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+. b
+. . 1
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+. . c
+. . . 1
+. . . . 2
+. . . . . 3
+checking path: &quot;123abc&quot;   OK
+checking path: &quot;12a3bc&quot;   OK
+checking path: &quot;12ab3c&quot;   OK
+checking path: &quot;12abc3&quot;   OK
+checking path: &quot;1a23bc&quot;   OK
+checking path: &quot;1a2b3c&quot;   OK
+checking path: &quot;1a2bc3&quot;   OK
+checking path: &quot;1ab23c&quot;   OK
+checking path: &quot;1ab2c3&quot;   OK
+checking path: &quot;1abc23&quot;   OK
+checking path: &quot;a123bc&quot;   OK
+checking path: &quot;a12b3c&quot;   OK
+checking path: &quot;a12bc3&quot;   OK
+checking path: &quot;a1b23c&quot;   OK
+checking path: &quot;a1b2c3&quot;   OK
+checking path: &quot;a1bc23&quot;   OK
+checking path: &quot;ab123c&quot;   OK
+checking path: &quot;ab12c3&quot;   OK
+checking path: &quot;ab1c23&quot;   OK
+checking path: &quot;abc123&quot;   OK
+event tree: 
+&lt;NONE&gt;
+a
+. b
+. . c
+. . . d
+. . . &lt;NONE&gt;
+. . &lt;NONE&gt;
+. . d
+. &lt;NONE&gt;
+. c
+. . d
+. . &lt;NONE&gt;
+. d
+b
+. c
+. . d
+. . &lt;NONE&gt;
+. &lt;NONE&gt;
+. d
+c
+. d
+. &lt;NONE&gt;
+d
+checking path: &quot;&quot;   OK
+checking path: &quot;abcd&quot;   OK
+checking path: &quot;abc&quot;   OK
+checking path: &quot;ab&quot;   OK
+checking path: &quot;abd&quot;   OK
+checking path: &quot;a&quot;   OK
+checking path: &quot;acd&quot;   OK
+checking path: &quot;ac&quot;   OK
+checking path: &quot;ad&quot;   OK
+checking path: &quot;bcd&quot;   OK
+checking path: &quot;bc&quot;   OK
+checking path: &quot;b&quot;   OK
+checking path: &quot;bd&quot;   OK
+checking path: &quot;cd&quot;   OK
+checking path: &quot;c&quot;   OK
+checking path: &quot;d&quot;   OK
+a
+. 1
+. . b
+. X
+. . Y
+. . . b
+. r
+. . r
+. . . r
+. . . . b
+a,1,b.
+a,X,Y,b.
+a,r,r,r,b.
+max depth: 5
+event tree: 
+a
+. b
+. . c
+a
+. c
+. . b
+b
+. a
+. . c
+b
+. c
+. . a
+c
+. a
+. . b
+c
+. b
+. . a
+checking path: &quot;abc&quot;   OK
+checking path: &quot;acb&quot;   OK
+checking path: &quot;bac&quot;   OK
+checking path: &quot;bca&quot;   OK
+checking path: &quot;cab&quot;   OK
+checking path: &quot;cba&quot;   OK
+merged tree: 
+1,2,a,b.
+1,a,2,b.
+1,a,b,2.
+a,1,2,b.
+a,1,b,2.
+a,b,1,2.
+reduced tree: 
+event tree: 
+a
+. b
+checking path: &quot;ab&quot;   OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>
