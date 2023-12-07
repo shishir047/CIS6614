@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.mc.basic.CascadedCGTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.mc.basic.CascadedCGTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.mc.basic.html">gov.nasa.jpf.test.mc.basic</a> &gt; CascadedCGTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.637s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCascadedIntIntervals</td>
+<td class="success">0.478s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMixedThreadDataCGs</td>
+<td class="success">0.159s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args: +listener=.test.mc.basic.CascadedCGTest$IntChoiceCascader
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CascadedCGTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# listener registered gov.nasa.jpf.vm.choice.IntIntervalGenerator[id=&quot;listenerCG&quot;,isCascaded:false,3..4,delta=+1,cur=2]
+# current listener CG choice: 3
+# current insn CG choice: 1
+i=1
+# current listener CG choice: 4
+# current insn CG choice: 1
+i=1
+# current listener CG choice: 3
+# current insn CG choice: 2
+i=2
+# current listener CG choice: 4
+# current insn CG choice: 2
+i=2
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.test.mc.basic.CascadedCGTest$FieldAccessCascader
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CascadedCGTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;ROOT&quot; ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# started thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+#------ 0 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;START&quot; ,1/2,isCascaded:false}
+&lt;main&gt; mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 1 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;TERMINATE&quot; ,1/1,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,43]
+#------ 2 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,&gt;42,43]
+# listener replacing 7 with 42
+&lt;thread&gt; mySharedField read: 42
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 3 isNew: true, isEnd: true
+#------ [3] backtrack: 2
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,&gt;43]
+# listener replacing 7 with 43
+&lt;thread&gt; mySharedField read: 43
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 3 isNew: false, isEnd: true
+#------ [3] backtrack: 2
+#------ [2] backtrack: 1
+#------ [1] backtrack: 0
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;START&quot; ,2/2,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,43]
+#------ 4 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;SHARED_OBJECT&quot; ,1/2,isCascaded:true}
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,&gt;42,43]
+# running thread: ThreadInfo [name=main,id=0,state=RUNNING]
+#------ 5 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;SHARED_OBJECT&quot; ,1/2,isCascaded:false}
+&lt;main&gt; mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 2 isNew: false, isEnd: false
+#------ [3] backtrack: 5
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;SHARED_OBJECT&quot; ,2/2,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,43]
+#------ 5 isNew: false, isEnd: false
+#------ [3] backtrack: 5
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,&gt;43]
+#------ 5 isNew: false, isEnd: false
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;SHARED_OBJECT&quot; ,2/2,isCascaded:true}
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,&gt;42,43]
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener replacing -1 with 42
+&lt;thread&gt; mySharedField read: 42
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 6 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:&quot;TERMINATE&quot; ,1/1,isCascaded:false}
+# running thread: ThreadInfo [name=main,id=0,state=RUNNING]
+&lt;main&gt; mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 3 isNew: false, isEnd: true
+#------ [3] backtrack: 6
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id=&quot;fieldReplace&quot;,isCascaded:false,42,&gt;43]
+# listener replacing -1 with 43
+&lt;thread&gt; mySharedField read: 43
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 6 isNew: false, isEnd: false
+#------ [2] backtrack: 4
+#------ [1] backtrack: 0
+#------ [0] backtrack: -1
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.mc.data.EventGeneratorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.mc.data.EventGeneratorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.mc.data.html">gov.nasa.jpf.test.mc.data</a> &gt; EventGeneratorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.715s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAnyCombination</td>
+<td class="success">0.105s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEventExpansion</td>
+<td class="success">0.117s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleTree</td>
+<td class="success">0.493s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$SimpleTree +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[a],cur:null}
+[INFO] processing event: a
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[1,x],cur:null}
+[INFO] processing event: 1
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+got trace: a1b
+[INFO] processing event: x
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[x],cur:null}
+[INFO] processing event: x
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+got trace: axxb
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$CombinationTree +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+&lt;NONE&gt;
+A
+. B
+. . C
+. . &lt;NONE&gt;
+. &lt;NONE&gt;
+. C
+B
+. C
+. &lt;NONE&gt;
+C
+.
+A,B,C.
+A,B.
+A.
+A,C.
+B,C.
+B.
+C.
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[&lt;NONE&gt;,A,B,C],cur:null}
+[INFO] no more events
+[INFO] processing event: A
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[B,&lt;NONE&gt;,C],cur:null}
+[INFO] processing event: B
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[C,&lt;NONE&gt;],cur:null}
+[INFO] processing event: C
+[INFO] no more events
+[INFO] no more events
+[INFO] no more events
+[INFO] processing event: C
+[INFO] no more events
+[INFO] processing event: B
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[C,&lt;NONE&gt;],cur:null}
+[INFO] processing event: C
+[INFO] no more events
+[INFO] no more events
+[INFO] processing event: C
+[INFO] no more events
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$ExpandTree +event.context.class=.test.mc.data.EventGeneratorTest$MyEventContext +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+a
+. *
+. . &lt;opt&gt;
+. . . b
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[a],cur:null}
+[INFO] processing event: a
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[*],cur:null}
+  expanding * to [X,Y]
+[INFO] processing event: X
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[&lt;opt&gt;],cur:null}
+  skipping &lt;opt&gt;
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+--- got trace: aXb
+[INFO] processing event: Y
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[&lt;opt&gt;],cur:null}
+  skipping &lt;opt&gt;
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:&quot;processNextEvent&quot;,[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+--- got trace: aYb
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

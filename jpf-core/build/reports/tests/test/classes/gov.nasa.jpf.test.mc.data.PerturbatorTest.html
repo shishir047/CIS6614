@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.mc.data.PerturbatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.mc.data.PerturbatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.mc.data.html">gov.nasa.jpf.test.mc.data</a> &gt; PerturbatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.771s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testFieldPerturbationLocation</td>
+<td class="success">0.096s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIntFieldPerturbation</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIntReturnPerturbation</td>
+<td class="success">0.421s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testParamPerturbation</td>
+<td class="success">0.175s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args: +listener=.listener.Perturbator +perturb.returns=foo,bar +perturb.foo.class=.perturb.IntOverUnder +perturb.foo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.foo(int) +perturb.foo.location=PerturbatorTest.java:136 +perturb.foo.delta=1 +perturb.bar.class=.perturb.IntOverUnder +perturb.bar.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.bar(int,boolean) +perturb.bar.delta=5
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+int return perturbation test
+foo() = -1
+foo() = 43
+foo() = 42
+foo() = 41
+bar() = 44
+bar() = 39
+bar() = 34
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.fields=data +perturb.data.class=.perturb.IntOverUnder +perturb.data.field=gov.nasa.jpf.test.mc.data.PerturbatorTest.data +perturb.data.location=PerturbatorTest.java:87 +perturb.data.delta=1
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+instance field location perturbation test
+x = 42
+d = 43
+d = 42
+d = 41
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.params=foo,zoo +perturb.foo.class=.perturb.GenericDataAbstractor +perturb.foo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.foobar(long,double) +perturb.foo.location=PerturbatorTest.java:233 +perturb.zoo.class=.perturb.GenericDataAbstractor +perturb.zoo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.zoo(int,boolean)
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+parameters perturbation test
+(21, false)
+zoo = 21
+(21, true)
+zoo = -21
+(0, false)
+zoo = 0
+(0, true)
+zoo = 0
+(-84, false)
+zoo = -84
+(-84, true)
+zoo = 84
+(42, 0.0)
+foobar = 2.0
+(32, -1.414)
+foobar = 0.5860000000000001
+(32, 0.0)
+foobar = 2.0
+(32, 3.141)
+foobar = 5.141
+(0, -1.414)
+foobar = -1.414
+(0, 0.0)
+foobar = 0.0
+(0, 3.141)
+foobar = 3.141
+(-60, -1.414)
+foobar = -1.414
+(-60, 0.0)
+foobar = 0.0
+(-60, 3.141)
+foobar = 3.141
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.fields=data +perturb.data.class=.perturb.IntOverUnder +perturb.data.field=gov.nasa.jpf.test.mc.data.PerturbatorTest.data +perturb.data.delta=1
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+instance field perturbation test
+d = 43
+d = 42
+d = 41
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

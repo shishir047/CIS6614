@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.test.mc.basic.TraceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.test.mc.basic.TraceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.test.mc.basic.html">gov.nasa.jpf.test.mc.basic</a> &gt; TraceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.271s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDepth</td>
+<td class="success">0.522s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testErrorTrace</td>
+<td class="success">0.622s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPartialTrace</td>
+<td class="success">0.127s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>  running jpf with args: +listener=.listener.TraceStorer +trace.file=trace +trace.depth=3 +search.depth_limit=3 gov.nasa.jpf.test.mc.basic.TraceTest baz
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod(&quot;gov.nasa.jpf.test.mc.basic.TraceTest&quot;,&quot;baz&quot;)
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.listener.ChoiceSelector +choice.use_trace=trace +search.depth_limit=3 gov.nasa.jpf.test.mc.basic.TraceTest baz
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod(&quot;gov.nasa.jpf.test.mc.basic.TraceTest&quot;,&quot;baz&quot;)
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+--- creating trace
+  running jpf with args: +listener=.listener.TraceStorer +trace.file=trace
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+0,0,0,false,0
+0,0,0,false,1
+0,0,0,false,2
+0,0,0,false,3
+0,0,0,true,0
+0,0,0,true,1
+0,0,0,true,2
+0,0,0,true,3
+0,0,1,false,0
+0,0,1,false,1
+0,0,1,false,2
+0,0,1,false,3
+0,0,1,true,0
+0,0,1,true,1
+0,0,1,true,2
+0,0,1,true,3
+0,0,2,false,0
+0,0,2,false,1
+0,0,2,false,2
+0,0,2,false,3
+0,0,2,true,0
+0,0,2,true,1
+0,0,2,true,2
+0,0,2,true,3
+0,0,3,false,0
+0,0,3,false,1
+0,0,3,false,2
+0,0,3,false,3
+0,0,3,true,0
+0,0,3,true,1
+0,0,3,true,2
+0,0,3,true,3
+0,0,4,false,0
+0,0,4,false,1
+0,0,4,false,2
+0,0,4,false,3
+0,0,4,true,0
+0,0,4,true,1
+0,0,4,true,2
+0,0,4,true,3
+0,0,5,false,0
+0,0,5,false,1
+0,0,5,false,2
+0,0,5,false,3
+0,0,5,true,0
+0,0,5,true,1
+0,0,5,true,2
+0,0,5,true,3
+0,1,0,false,0
+0,1,0,false,1
+0,1,0,false,2
+0,1,0,false,3
+0,1,0,true,0
+0,1,0,true,1
+0,1,0,true,2
+0,1,0,true,3
+0,1,1,false,0
+0,1,1,false,1
+0,1,1,false,2
+0,1,1,false,3
+0,1,1,true,0
+0,1,1,true,1
+0,1,1,true,2
+0,1,1,true,3
+0,1,2,false,0
+0,1,2,false,1
+0,1,2,false,2
+0,1,2,false,3
+0,1,2,true,0
+0,1,2,true,1
+0,1,2,true,2
+0,1,2,true,3
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError
+	at gov.nasa.jpf.test.mc.basic.TraceTest.bar(gov/nasa/jpf/test/mc/basic/TraceTest.java:92)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty &quot;java.lang.AssertionError  at gov.nasa.jpf.test.mc....&quot;
+
+====================================================== search finished: 11/26/23, 2:35 PM
+--- replaying trace
+  running jpf with args: +listener=.listener.ChoiceSelector +choice.use_trace=trace
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+0,1,2,true,3
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError
+	at gov.nasa.jpf.test.mc.basic.TraceTest.bar(gov/nasa/jpf/test/mc/basic/TraceTest.java:92)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty &quot;java.lang.AssertionError  at gov.nasa.jpf.test.mc....&quot;
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+pre-trace choice: 0,100
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.listener.ChoiceSelector +choice.use_trace=trace
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.TraceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+pre-trace choice: 0,100
+post-trace choice: 0,100,0
+post-trace choice: 0,100,1
+post-trace choice: 0,100,2
+post-trace choice: 0,100,3
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>

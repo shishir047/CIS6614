@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class gov.nasa.jpf.ConfigTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class gov.nasa.jpf.ConfigTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/gov.nasa.jpf.html">gov.nasa.jpf</a> &gt; ConfigTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.076s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testClassPaths</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDefaultAppPropertyInit</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDefaultExplicitTargetInit</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExplicitLocations</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIncludes</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIntArray</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequiresFail</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequiresOk</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTargetArgsOverride</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>----------- Config contents
+branch_start = 1
+cg.boolean.false_first = true
+cg.break_single_choice = false
+cg.enable_atomic = true
+cg.enumerate_random = false
+cg.max_processors = 1
+cg.randomize_choices = NONE
+cg.seed = 42
+cg.threads.break_arrays = false
+cg.threads.break_sleep = true
+cg.threads.break_start = true
+cg.threads.break_yield = true
+config = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf\configTestApp.jpf
+config_path = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+ext.numeric = /Users/pcmehlitz/projects/jpf-v5/jpf-numeric
+ext.swing = /Users/pcmehlitz/projects/jpf-v5/jpf-swing
+extensions = ,/Users/pcmehlitz/projects/jpf-v5/jpf-numeric,/Users/pcmehlitz/projects/jpf-v5/jpf-swing
+jpf-core = C:\Users\shish\OneDrive\Desktop\jpf-core
+jpf-core.classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-classes.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/examples;C:\Users\shish\OneDrive\Desktop\jpf-core/build/classes
+jpf-core.native_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-annotations.jar
+jpf-core.peer_packages = gov.nasa.jpf.vm,&lt;model&gt;,&lt;default&gt;
+jpf-core.sourcepath = C:\Users\shish\OneDrive\Desktop\jpf-core/src/examples
+jpf-core.test_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/asm-9.5.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/tests
+jpf.app = src/tests/gov/nasa/jpf/configTestApp.jpf
+jpf.core = /Users/pcmehlitz/projects/jpf-v5/jpf-core
+jpf.print_exception_stack = true
+jpf.root = /Users/pcmehlitz/projects/jpf-v5
+jpf.site = src/tests/gov/nasa/jpf/configTestSite.properties
+jvm.insn_factory.class = gov.nasa.jpf.jvm.bytecode.InstructionFactory
+jvm.nested_init = false
+jvm.nested_init.exclude = java.*,javax.*,sun.misc.*
+listener.autoload = gov.nasa.jpf.NonNull,gov.nasa.jpf.Const
+listener.gov.nasa.jpf.Const = gov.nasa.jpf.tools.ConstChecker
+listener.gov.nasa.jpf.NonNull = gov.nasa.jpf.tools.NonNullChecker
+log.handler.class = gov.nasa.jpf.util.LogHandler
+log.level = warning
+mySUT.location = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+name = mySUT
+race.exclude = java.*,javax.*
+report.class = gov.nasa.jpf.report.Reporter
+report.console.class = gov.nasa.jpf.report.ConsolePublisher
+report.console.constraint = constraint,snapshot
+report.console.finished = result,statistics
+report.console.probe = statistics
+report.console.property_violation = error,snapshot
+report.console.show_code = false
+report.console.show_method = true
+report.console.show_steps = true
+report.console.start = jpf,sut
+report.console.transition = 
+report.html.class = gov.nasa.jpf.report.HTMLPublisher
+report.html.constraint = constraint
+report.html.finished = result,statistics,error,snapshot,output
+report.html.property_violation = 
+report.html.start = jpf,sut,platform,user,dtg,config
+report.publisher = console
+report.xml.class = gov.nasa.jpf.report.XMLPublisher
+search.class = gov.nasa.jpf.search.DFSearch
+search.heuristic.branch.count_early = true
+search.heuristic.branch.no_branch_return = -1
+search.heuristic.queue_limit = -1
+search.match_depth = false
+search.min_free = 1M
+search.multiple_errors = false
+search.properties = gov.nasa.jpf.vm.NotDeadlockedProperty,gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+target = urgh.org.MySystemUnderTest
+target.args = a,b,c
+test.report.console.finished = result
+vm.backtracker.class = gov.nasa.jpf.vm.DefaultBacktracker
+vm.boot_classpath = &lt;system&gt;
+vm.class = gov.nasa.jpf.vm.SingleProcessVM
+vm.classloader.class = gov.nasa.jpf.jvm.JVMSystemClassLoaderInfo
+vm.fields_factory.class = gov.nasa.jpf.vm.DefaultFieldsFactory
+vm.finalize = false
+vm.gc = true
+vm.heap.class = gov.nasa.jpf.vm.OVHeap
+vm.ignore_uncaught_handler = false
+vm.max_alloc_gc = -1
+vm.max_transition_length = 50000
+vm.no_orphan_methods = false
+vm.pass_uncaught_handler = true
+vm.path_output = false
+vm.process_finalizers = false
+vm.restorer.class = .vm.DefaultMementoRestorer
+vm.reuse_tid = false
+vm.scheduler.class = gov.nasa.jpf.vm.DelegatingScheduler
+vm.scheduler.sharedness.class = gov.nasa.jpf.vm.PathSharednessPolicy
+vm.scheduler.sync.class = gov.nasa.jpf.vm.AllRunnablesSyncPolicy
+vm.scheduler_factory.class = gov.nasa.jpf.vm.DefaultSchedulerFactory
+vm.serializer.class = gov.nasa.jpf.vm.serialize.CFSerializer
+vm.shared.break_on_exposure = true
+vm.shared.never_break_fields = java.lang.Thread*.*,java.lang.System.*,java.lang.Runtime.*,java.lang.Boolean.*,java.lang.String.*,java.lang.*.TYPE,java.util.HashMap.EMPTY_TABLE,java.util.HashSet.PRESENT,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.TimeUnit.*,java.util.concurrent.Exchanger.CANCEL,java.util.concurrent.Exchanger.NULL_ITEM,java.util.concurrent.Executors$DefaultThreadFactory.*,sun.misc.VM.*,sun.misc.SharedSecrets.*,sun.misc.Unsafe.theUnsafe,gov.nasa.jpf.util.test.TestJPF.*
+vm.shared.never_break_methods = java.util.concurrent.ThreadPoolExecutor.processWorkerExit,java.util.concurrent.locks.Abstract*Synchronizer.*,java.util.concurrent.ThreadPoolExecutor.getTask,java.util.concurrent.atomic.Atomic*.*,java.util.concurrent.Exchanger.doExchange,java.util.concurrent.ThreadPoolExecutor.interruptIdleWorkers,java.util.concurrent.TimeUnit.*
+vm.shared.never_break_types = java.util.concurrent.TimeUnit
+vm.shared.skip_constructed_finals = false
+vm.shared.skip_finals = true
+vm.shared.skip_static_finals = false
+vm.shared.sync_detection = true
+vm.statics.class = gov.nasa.jpf.vm.OVStatics
+vm.storage.class = gov.nasa.jpf.vm.JenkinsStateSet
+vm.store_steps = false
+vm.sysprop.source = SELECTED
+vm.threadlist.class = gov.nasa.jpf.vm.ThreadList
+vm.time.class = gov.nasa.jpf.vm.SystemTime
+vm.tree_output = true
+vm.untracked = true
+vm.verify.ignore_path = true
+loading property file: src/tests/gov/nasa/jpf/configTestSite.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: src/tests/gov/nasa/jpf/configTestRequiresFail.jpf
+missing required key: thisDoesNotExist, skipping: src/tests/gov/nasa/jpf/configTestRequiresFail.jpf
+got whoa = null
+loading property file: src/tests/gov/nasa/jpf/configTestSite.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: src/tests/gov/nasa/jpf/configTestRequires.jpf
+got whoa = boa
+loading property file: src/tests/gov/nasa/jpf/configTestSite.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: src/tests/gov/nasa/jpf/configTestIncludes.jpf
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf\configTestCommon.jpf
+got my.common = whatever
+loading property file: src/tests/gov/nasa/jpf/configTestSite.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\site.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: src/tests/gov/nasa/jpf/configTestApp.jpf
+----------- Config contents
+branch_start = 1
+cg.boolean.false_first = true
+cg.break_single_choice = false
+cg.enable_atomic = true
+cg.enumerate_random = false
+cg.max_processors = 1
+cg.randomize_choices = NONE
+cg.seed = 42
+cg.threads.break_arrays = false
+cg.threads.break_sleep = true
+cg.threads.break_start = true
+cg.threads.break_yield = true
+config = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf\configTestApp.jpf
+config_path = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+extensions = $C:UsersshishOneDriveDesktopjpf-core
+jpf-core = C:\Users\shish\OneDrive\Desktop\jpf-core
+jpf-core.classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-classes.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/examples;C:\Users\shish\OneDrive\Desktop\jpf-core/build/classes
+jpf-core.native_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-annotations.jar
+jpf-core.peer_packages = gov.nasa.jpf.vm,&lt;model&gt;,&lt;default&gt;
+jpf-core.sourcepath = C:\Users\shish\OneDrive\Desktop\jpf-core/src/examples
+jpf-core.test_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/asm-9.5.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/tests
+jpf.app = src/tests/gov/nasa/jpf/configTestApp.jpf
+jpf.print_exception_stack = true
+jpf.site = C:\Users\shish\OneDrive\Desktop\jpf-core\site.properties
+jvm.insn_factory.class = gov.nasa.jpf.jvm.bytecode.InstructionFactory
+jvm.nested_init = false
+jvm.nested_init.exclude = java.*,javax.*,sun.misc.*
+listener.autoload = gov.nasa.jpf.NonNull,gov.nasa.jpf.Const
+listener.gov.nasa.jpf.Const = gov.nasa.jpf.tools.ConstChecker
+listener.gov.nasa.jpf.NonNull = gov.nasa.jpf.tools.NonNullChecker
+log.handler.class = gov.nasa.jpf.util.LogHandler
+log.level = warning
+mySUT.location = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+name = mySUT
+race.exclude = java.*,javax.*
+report.class = gov.nasa.jpf.report.Reporter
+report.console.class = gov.nasa.jpf.report.ConsolePublisher
+report.console.constraint = constraint,snapshot
+report.console.finished = result,statistics
+report.console.probe = statistics
+report.console.property_violation = error,snapshot
+report.console.show_code = false
+report.console.show_method = true
+report.console.show_steps = true
+report.console.start = jpf,sut
+report.console.transition = 
+report.html.class = gov.nasa.jpf.report.HTMLPublisher
+report.html.constraint = constraint
+report.html.finished = result,statistics,error,snapshot,output
+report.html.property_violation = 
+report.html.start = jpf,sut,platform,user,dtg,config
+report.publisher = console
+report.xml.class = gov.nasa.jpf.report.XMLPublisher
+search.class = gov.nasa.jpf.search.DFSearch
+search.heuristic.branch.count_early = true
+search.heuristic.branch.no_branch_return = -1
+search.heuristic.queue_limit = -1
+search.match_depth = false
+search.min_free = 1M
+search.multiple_errors = false
+search.properties = gov.nasa.jpf.vm.NotDeadlockedProperty,gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+target = urgh.org.MySystemUnderTest
+target.args = a,b,c
+test.report.console.finished = result
+vm.backtracker.class = gov.nasa.jpf.vm.DefaultBacktracker
+vm.boot_classpath = &lt;system&gt;
+vm.class = gov.nasa.jpf.vm.SingleProcessVM
+vm.classloader.class = gov.nasa.jpf.jvm.JVMSystemClassLoaderInfo
+vm.fields_factory.class = gov.nasa.jpf.vm.DefaultFieldsFactory
+vm.finalize = false
+vm.gc = true
+vm.heap.class = gov.nasa.jpf.vm.OVHeap
+vm.ignore_uncaught_handler = false
+vm.max_alloc_gc = -1
+vm.max_transition_length = 50000
+vm.no_orphan_methods = false
+vm.pass_uncaught_handler = true
+vm.path_output = false
+vm.process_finalizers = false
+vm.restorer.class = .vm.DefaultMementoRestorer
+vm.reuse_tid = false
+vm.scheduler.class = gov.nasa.jpf.vm.DelegatingScheduler
+vm.scheduler.sharedness.class = gov.nasa.jpf.vm.PathSharednessPolicy
+vm.scheduler.sync.class = gov.nasa.jpf.vm.AllRunnablesSyncPolicy
+vm.scheduler_factory.class = gov.nasa.jpf.vm.DefaultSchedulerFactory
+vm.serializer.class = gov.nasa.jpf.vm.serialize.CFSerializer
+vm.shared.break_on_exposure = true
+vm.shared.never_break_fields = java.lang.Thread*.*,java.lang.System.*,java.lang.Runtime.*,java.lang.Boolean.*,java.lang.String.*,java.lang.*.TYPE,java.util.HashMap.EMPTY_TABLE,java.util.HashSet.PRESENT,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.TimeUnit.*,java.util.concurrent.Exchanger.CANCEL,java.util.concurrent.Exchanger.NULL_ITEM,java.util.concurrent.Executors$DefaultThreadFactory.*,sun.misc.VM.*,sun.misc.SharedSecrets.*,sun.misc.Unsafe.theUnsafe,gov.nasa.jpf.util.test.TestJPF.*
+vm.shared.never_break_methods = java.util.concurrent.ThreadPoolExecutor.processWorkerExit,java.util.concurrent.locks.Abstract*Synchronizer.*,java.util.concurrent.ThreadPoolExecutor.getTask,java.util.concurrent.atomic.Atomic*.*,java.util.concurrent.Exchanger.doExchange,java.util.concurrent.ThreadPoolExecutor.interruptIdleWorkers,java.util.concurrent.TimeUnit.*
+vm.shared.never_break_types = java.util.concurrent.TimeUnit
+vm.shared.skip_constructed_finals = false
+vm.shared.skip_finals = true
+vm.shared.skip_static_finals = false
+vm.shared.sync_detection = true
+vm.statics.class = gov.nasa.jpf.vm.OVStatics
+vm.storage.class = gov.nasa.jpf.vm.JenkinsStateSet
+vm.store_steps = false
+vm.sysprop.source = SELECTED
+vm.threadlist.class = gov.nasa.jpf.vm.ThreadList
+vm.time.class = gov.nasa.jpf.vm.SystemTime
+vm.tree_output = true
+vm.untracked = true
+vm.verify.ignore_path = true
+loading property file: src/tests/gov/nasa/jpf/configTestSite.properties
+loading property file: C:\Users\shish\OneDrive\Desktop\jpf-core\jpf.properties
+loading property file: src/tests/gov/nasa/jpf/configTestApp.jpf
+----------- Config contents
+branch_start = 1
+cg.boolean.false_first = true
+cg.break_single_choice = false
+cg.enable_atomic = true
+cg.enumerate_random = false
+cg.max_processors = 1
+cg.randomize_choices = NONE
+cg.seed = 42
+cg.threads.break_arrays = false
+cg.threads.break_sleep = true
+cg.threads.break_start = true
+cg.threads.break_yield = true
+config = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf\configTestApp.jpf
+config_path = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+ext.numeric = /Users/pcmehlitz/projects/jpf-v5/jpf-numeric
+ext.swing = /Users/pcmehlitz/projects/jpf-v5/jpf-swing
+extensions = ,/Users/pcmehlitz/projects/jpf-v5/jpf-numeric,/Users/pcmehlitz/projects/jpf-v5/jpf-swing
+jpf-core = C:\Users\shish\OneDrive\Desktop\jpf-core
+jpf-core.classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-classes.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/examples;C:\Users\shish\OneDrive\Desktop\jpf-core/build/classes
+jpf-core.native_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/jpf-annotations.jar
+jpf-core.peer_packages = gov.nasa.jpf.vm,&lt;model&gt;,&lt;default&gt;
+jpf-core.sourcepath = C:\Users\shish\OneDrive\Desktop\jpf-core/src/examples
+jpf-core.test_classpath = C:\Users\shish\OneDrive\Desktop\jpf-core/build/asm-9.5.jar;C:\Users\shish\OneDrive\Desktop\jpf-core/build/tests
+jpf.app = src/tests/gov/nasa/jpf/configTestApp.jpf
+jpf.core = /Users/pcmehlitz/projects/jpf-v5/jpf-core
+jpf.print_exception_stack = true
+jpf.root = /Users/pcmehlitz/projects/jpf-v5
+jpf.site = src/tests/gov/nasa/jpf/configTestSite.properties
+jvm.insn_factory.class = gov.nasa.jpf.jvm.bytecode.InstructionFactory
+jvm.nested_init = false
+jvm.nested_init.exclude = java.*,javax.*,sun.misc.*
+listener.autoload = gov.nasa.jpf.NonNull,gov.nasa.jpf.Const
+listener.gov.nasa.jpf.Const = gov.nasa.jpf.tools.ConstChecker
+listener.gov.nasa.jpf.NonNull = gov.nasa.jpf.tools.NonNullChecker
+log.handler.class = gov.nasa.jpf.util.LogHandler
+log.level = warning
+mySUT.location = C:\Users\shish\OneDrive\Desktop\jpf-core\src\tests\gov\nasa\jpf
+name = mySUT
+race.exclude = java.*,javax.*
+report.class = gov.nasa.jpf.report.Reporter
+report.console.class = gov.nasa.jpf.report.ConsolePublisher
+report.console.constraint = constraint,snapshot
+report.console.finished = result,statistics
+report.console.probe = statistics
+report.console.property_violation = error,snapshot
+report.console.show_code = false
+report.console.show_method = true
+report.console.show_steps = true
+report.console.start = jpf,sut
+report.console.transition = 
+report.html.class = gov.nasa.jpf.report.HTMLPublisher
+report.html.constraint = constraint
+report.html.finished = result,statistics,error,snapshot,output
+report.html.property_violation = 
+report.html.start = jpf,sut,platform,user,dtg,config
+report.publisher = console
+report.xml.class = gov.nasa.jpf.report.XMLPublisher
+search.class = gov.nasa.jpf.search.DFSearch
+search.heuristic.branch.count_early = true
+search.heuristic.branch.no_branch_return = -1
+search.heuristic.queue_limit = -1
+search.match_depth = false
+search.min_free = 1M
+search.multiple_errors = false
+search.properties = gov.nasa.jpf.vm.NotDeadlockedProperty,gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+target = urgh.org.MySystemUnderTest
+target.args = a,b,c
+test.report.console.finished = result
+vm.backtracker.class = gov.nasa.jpf.vm.DefaultBacktracker
+vm.boot_classpath = &lt;system&gt;
+vm.class = gov.nasa.jpf.vm.SingleProcessVM
+vm.classloader.class = gov.nasa.jpf.jvm.JVMSystemClassLoaderInfo
+vm.fields_factory.class = gov.nasa.jpf.vm.DefaultFieldsFactory
+vm.finalize = false
+vm.gc = true
+vm.heap.class = gov.nasa.jpf.vm.OVHeap
+vm.ignore_uncaught_handler = false
+vm.max_alloc_gc = -1
+vm.max_transition_length = 50000
+vm.no_orphan_methods = false
+vm.pass_uncaught_handler = true
+vm.path_output = false
+vm.process_finalizers = false
+vm.restorer.class = .vm.DefaultMementoRestorer
+vm.reuse_tid = false
+vm.scheduler.class = gov.nasa.jpf.vm.DelegatingScheduler
+vm.scheduler.sharedness.class = gov.nasa.jpf.vm.PathSharednessPolicy
+vm.scheduler.sync.class = gov.nasa.jpf.vm.AllRunnablesSyncPolicy
+vm.scheduler_factory.class = gov.nasa.jpf.vm.DefaultSchedulerFactory
+vm.serializer.class = gov.nasa.jpf.vm.serialize.CFSerializer
+vm.shared.break_on_exposure = true
+vm.shared.never_break_fields = java.lang.Thread*.*,java.lang.System.*,java.lang.Runtime.*,java.lang.Boolean.*,java.lang.String.*,java.lang.*.TYPE,java.util.HashMap.EMPTY_TABLE,java.util.HashSet.PRESENT,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.ThreadPoolExecutor*.*,java.util.concurrent.TimeUnit.*,java.util.concurrent.Exchanger.CANCEL,java.util.concurrent.Exchanger.NULL_ITEM,java.util.concurrent.Executors$DefaultThreadFactory.*,sun.misc.VM.*,sun.misc.SharedSecrets.*,sun.misc.Unsafe.theUnsafe,gov.nasa.jpf.util.test.TestJPF.*
+vm.shared.never_break_methods = java.util.concurrent.ThreadPoolExecutor.processWorkerExit,java.util.concurrent.locks.Abstract*Synchronizer.*,java.util.concurrent.ThreadPoolExecutor.getTask,java.util.concurrent.atomic.Atomic*.*,java.util.concurrent.Exchanger.doExchange,java.util.concurrent.ThreadPoolExecutor.interruptIdleWorkers,java.util.concurrent.TimeUnit.*
+vm.shared.never_break_types = java.util.concurrent.TimeUnit
+vm.shared.skip_constructed_finals = false
+vm.shared.skip_finals = true
+vm.shared.skip_static_finals = false
+vm.shared.sync_detection = true
+vm.statics.class = gov.nasa.jpf.vm.OVStatics
+vm.storage.class = gov.nasa.jpf.vm.JenkinsStateSet
+vm.store_steps = false
+vm.sysprop.source = SELECTED
+vm.threadlist.class = gov.nasa.jpf.vm.ThreadList
+vm.time.class = gov.nasa.jpf.vm.SystemTime
+vm.tree_output = true
+vm.untracked = true
+vm.verify.ignore_path = true
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Nov 26, 2023, 2:38:03 PM</p>
+</div>
+</div>
+</body>
+</html>
