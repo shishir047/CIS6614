@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.util.FunctionsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:16" hostname="SHISHIRHP" time="0.007">
+  <properties/>
+  <testcase name="test_before_function" classname="gov.nasa.jpf.test.java.util.FunctionsTest" time="0.005"/>
+  <testcase name="test_and_then_function" classname="gov.nasa.jpf.test.java.util.FunctionsTest" time="0.001"/>
+  <testcase name="test_before_then_compose" classname="gov.nasa.jpf.test.java.util.FunctionsTest" time="0.001"/>
+  <testcase name="test_partially_applied_functions" classname="gov.nasa.jpf.test.java.util.FunctionsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

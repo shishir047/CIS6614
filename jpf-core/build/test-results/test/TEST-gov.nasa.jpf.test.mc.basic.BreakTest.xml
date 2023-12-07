@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.BreakTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:20" hostname="SHISHIRHP" time="0.716">
+  <properties/>
+  <testcase name="testSimpleBreak" classname="gov.nasa.jpf.test.mc.basic.BreakTest" time="0.427"/>
+  <testcase name="testDeepCGBreak" classname="gov.nasa.jpf.test.mc.basic.BreakTest" time="0.108"/>
+  <testcase name="testSimpleIgnore" classname="gov.nasa.jpf.test.mc.basic.BreakTest" time="0.09"/>
+  <testcase name="testIgnoreAfterCG" classname="gov.nasa.jpf.test.mc.basic.BreakTest" time="0.091"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.test.mc.basic.BreakTest$FieldBreaker +vm.max_transition_length=1000000
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.BreakTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+CG set: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+CG advanced: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# breaking after: putfield gov.nasa.jpf.test.mc.basic.BreakTest.data
+CG set: gov.nasa.jpf.vm.choice.BreakGenerator {id:"breakTest" ,0/1,isCascaded:false}
+CG advanced: gov.nasa.jpf.vm.choice.BreakGenerator {id:"breakTest" ,1/1,isCascaded:false}
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.test.mc.basic.BreakTest$FooCallBreaker
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.BreakTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+CG set: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+CG advanced: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+CG set: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{true,false}]
+CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{>true,false}]
+foo,bar branch
+# breaking & pruning after: invokevirtual gov.nasa.jpf.test.mc.basic.BreakTest.foo()V
+# registered (ignored) CG: null
+CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{true,>false}]
+bar,foo branch
+bar
+# breaking & pruning after: invokevirtual gov.nasa.jpf.test.mc.basic.BreakTest.foo()V
+# registered (ignored) CG: null
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.test.mc.basic.BreakTest$FieldIgnorer +vm.max_transition_length=1000000
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.BreakTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+CG set: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+CG advanced: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# ignoring after: putfield gov.nasa.jpf.test.mc.basic.BreakTest.data
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.test.mc.basic.BreakTest$VerifyNextIntBreaker
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.BreakTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+CG set: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+CG advanced: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+CG set: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{true,false}]
+CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{>true,false}]
+true branch (should be first)
+# breaking & pruning after: executenative JPF_gov_nasa_jpf_vm_Verify.getInt__II__I
+# registered (ignored) CG: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,1..2,delta=+1,cur=0]
+CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean(Z)",isCascaded:false,{true,>false}]
+false branch
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

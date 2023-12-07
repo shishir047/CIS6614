@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:17" hostname="SHISHIRHP" time="0.012">
+  <properties/>
+  <testcase name="test_get_days_between_dates" classname="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" time="0.011"/>
+  <testcase name="test_subtract_from_date" classname="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" time="0.0"/>
+  <testcase name="test_create_date" classname="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" time="0.001"/>
+  <testcase name="test_add_to_date" classname="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" time="0.0"/>
+  <testcase name="test_get_date_parts" classname="gov.nasa.jpf.test.java.util.java.timeTest.LocalDateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

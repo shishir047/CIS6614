@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.jvm.MethodInfoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:11" hostname="SHISHIRHP" time="0.116">
+  <properties/>
+  <testcase name="testMethodArgs" classname="gov.nasa.jpf.jvm.MethodInfoTest" time="0.107"/>
+  <testcase name="testGetInstructionsForLine" classname="gov.nasa.jpf.jvm.MethodInfoTest" time="0.008"/>
+  <system-out><![CDATA[-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.staticNoArgs()D]
+-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.staticInt(I)D]
+     LocalVarInfo[name="intArg",signature="I",startPC=0,endPC=13,slotIndex=0]
+-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.staticIntString(ILjava/lang/String;)D]
+     LocalVarInfo[name="intArg",signature="I",startPC=0,endPC=13,slotIndex=0]
+     LocalVarInfo[name="stringArg",signature="Ljava/lang/String;",startPC=0,endPC=13,slotIndex=1]
+-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.instanceNoArgs()D]
+     LocalVarInfo[name="this",signature="Lgov/nasa/jpf/jvm/MethodInfoTest$MyClass;",startPC=0,endPC=13,slotIndex=0]
+-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.instanceInt(I)D]
+     LocalVarInfo[name="this",signature="Lgov/nasa/jpf/jvm/MethodInfoTest$MyClass;",startPC=0,endPC=13,slotIndex=0]
+     LocalVarInfo[name="intArg",signature="I",startPC=0,endPC=13,slotIndex=1]
+-- checking: MethodInfo[gov.nasa.jpf.jvm.MethodInfoTest$MyClass.instanceIntString(ILjava/lang/String;)D]
+     LocalVarInfo[name="this",signature="Lgov/nasa/jpf/jvm/MethodInfoTest$MyClass;",startPC=0,endPC=17,slotIndex=0]
+     LocalVarInfo[name="intArg",signature="I",startPC=0,endPC=17,slotIndex=1]
+     LocalVarInfo[name="stringArg",signature="Ljava/lang/String;",startPC=0,endPC=17,slotIndex=2]
+47 : iconst_0
+47 : istore_3
+47 : iload_3
+47 : iload_2
+47 : if_icmpge 17
+49 : iload_1
+49 : iload_1
+49 : iadd
+49 : istore_1
+47 : iinc
+47 : goto 2
+51 : iload_1
+51 : ireturn gov.nasa.jpf.jvm.MethodInfoTest$MyClass.instanceCycleMethod(II)I
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

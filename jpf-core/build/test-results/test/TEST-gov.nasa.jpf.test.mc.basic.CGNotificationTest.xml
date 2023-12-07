@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.CGNotificationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:21" hostname="SHISHIRHP" time="0.442">
+  <properties/>
+  <testcase name="testCGNotificationSequence" classname="gov.nasa.jpf.test.mc.basic.CGNotificationTest" time="0.442"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.test.mc.basic.CGNotificationTest$Sequencer +vm.max_transition_length=MAX
+# CG registered: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CGNotificationTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+# CG set:        gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,0/1,isCascaded:false}
+#   CG advanced: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# CG registered: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean",isCascaded:false,{false,true}]
+# CG set:        gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean",isCascaded:false,{false,true}]
+#   CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean",isCascaded:false,{>false,true}]
+# CG registered: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,1..2,delta=+1,cur=0]
+# CG registered: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,4]
+# CG set:        gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=0]
+# CG set:        gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=1]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,>3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=2]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,>3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=2]
+#   CG advanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean",isCascaded:false,{false,>true}]
+# CG registered: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,1..2,delta=+1,cur=0]
+# CG registered: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,4]
+# CG set:        gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=0]
+# CG set:        gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=1]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,>3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=2]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,>3,4]
+#   CG advanced: gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntChoiceFromList[id="listenerCG",isCascaded:false,3,>4]
+# CG processed:  gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="verifyGetInt(II)",isCascaded:true,1..2,delta=+1,cur=2]
+# CG processed:  gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="verifyGetBoolean",isCascaded:false,{false,>true}]
+# CG processed:  gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.SharedRefTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:44" hostname="SHISHIRHP" time="0.867">
+  <properties/>
+  <testcase name="testSharedStaticRoot" classname="gov.nasa.jpf.test.mc.basic.SharedRefTest" time="0.458"/>
+  <testcase name="testNonShared" classname="gov.nasa.jpf.test.mc.basic.SharedRefTest" time="0.211"/>
+  <testcase name="testShareControl" classname="gov.nasa.jpf.test.mc.basic.SharedRefTest" time="0.128"/>
+  <testcase name="testShared" classname="gov.nasa.jpf.test.mc.basic.SharedRefTest" time="0.07"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SharedRefTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: Argh, data race for o
+	at gov.nasa.jpf.test.mc.basic.SharedRefTest.run(gov/nasa/jpf/test/mc/basic/SharedRefTest.java:53)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.basic.SharedRefTest.run(SharedRefTest.java:53)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: Argh, data race for o  a..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SharedRefTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SharedRefTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+M inc
+M dec
+T inc
+T dec
+T inc
+T dec
+M inc
+M dec
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SharedRefTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: Argh, data race for o
+	at gov.nasa.jpf.test.mc.basic.SharedRefTest.run(gov/nasa/jpf/test/mc/basic/SharedRefTest.java:53)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.basic.SharedRefTest.run(SharedRefTest.java:53)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.basic.SharedRefTest.run(SharedRefTest.java:53)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: Argh, data race for o  a..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

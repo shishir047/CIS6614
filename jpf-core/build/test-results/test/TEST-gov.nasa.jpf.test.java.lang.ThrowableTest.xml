@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.lang.ThrowableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:56" hostname="SHISHIRHP" time="0.414">
+  <properties/>
+  <testcase name="testSetCause" classname="gov.nasa.jpf.test.java.lang.ThrowableTest" time="0.414"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ThrowableTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

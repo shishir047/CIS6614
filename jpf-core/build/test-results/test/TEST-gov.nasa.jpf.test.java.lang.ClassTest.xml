@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.lang.ClassTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:41" hostname="SHISHIRHP" time="2.355">
+  <properties/>
+  <testcase name="getDeclaringClassTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.407"/>
+  <testcase name="testAsSubclass" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.101"/>
+  <testcase name="testGetClass" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.095"/>
+  <testcase name="testNoDefaultConstructor" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.087"/>
+  <testcase name="localClassEnclosingClassTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.062"/>
+  <testcase name="testPrivateConstructorNewInstanceFailAccess" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.056"/>
+  <testcase name="testClassField" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.046"/>
+  <testcase name="isSyntheticTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.06"/>
+  <testcase name="getEnclosingConstructor" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.063"/>
+  <testcase name="testClassForNameReferenceArray" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.095"/>
+  <testcase name="testIsAssignableFrom" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.044"/>
+  <testcase name="testProtectedConstructorNewInstanceFailAccess" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.059"/>
+  <testcase name="testInstanceOf" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.038"/>
+  <testcase name="isMemberClassTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.046"/>
+  <testcase name="getDeclaredAnnotationsTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.053"/>
+  <testcase name="testPrivateNestMateNewInstanceAccess" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.065"/>
+  <testcase name="testClassForName" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.039"/>
+  <testcase name="testIsAnnotationPresent" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.041"/>
+  <testcase name="testProtectedConstructorNewInstanceAccess" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.036"/>
+  <testcase name="testMethods" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.038"/>
+  <testcase name="testIdentity" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.04"/>
+  <testcase name="testGetEnclosingClassExist" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.041"/>
+  <testcase name="testClassForNameInit" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.039"/>
+  <testcase name="testClassForNamePrimitiveArrays" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.053"/>
+  <testcase name="testProtectedNestMateNewInstanceAccess" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.052"/>
+  <testcase name="testNewInstance" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.051"/>
+  <testcase name="isLocalClassTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.055"/>
+  <testcase name="isAnonymousClassTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.049"/>
+  <testcase name="getResourceTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.07"/>
+  <testcase name="testNewInstanceFailAbstract" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.046"/>
+  <testcase name="testGetEnclosingClassNotExist" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.044"/>
+  <testcase name="getCanonicalNameTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.041"/>
+  <testcase name="getAnnotationsTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.034"/>
+  <testcase name="isEnumTest" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.032"/>
+  <testcase name="testClassForNameExceptionForInvalidArrayType" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.032"/>
+  <testcase name="testIsAnnotation" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.032"/>
+  <testcase name="getEnclosingMethod" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.035"/>
+  <testcase name="testInterfaces" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.038"/>
+  <testcase name="testClassForNameException" classname="gov.nasa.jpf.test.java.lang.ClassTest" time="0.034"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.InstantiationException: gov.nasa.jpf.test.java.lang.ClassTest$NoDefaultCtor
+	at java.lang.Class.newInstance(gov.nasa.jpf.vm.JPF_java_lang_Class)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testNoDefaultConstructor(gov/nasa/jpf/test/java/lang/ClassTest.java:291)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.InstantiationException: gov.nasa.jpf.tes..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException
+	at java.lang.reflect.Constructor.newInstance(gov.nasa.jpf.vm.JPF_java_lang_reflect_Constructor)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testPrivateConstructorNewInstanceFailAccess(gov/nasa/jpf/test/java/lang/ClassTest.java:240)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException  at java.lang.ref..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException
+	at java.lang.reflect.Constructor.newInstance(gov.nasa.jpf.vm.JPF_java_lang_reflect_Constructor)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testProtectedConstructorNewInstanceFailAccess(gov/nasa/jpf/test/java/lang/ClassTest.java:264)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException  at java.lang.ref..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+loaded gov.nasa.jpf.test.java.lang.ClassTest
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+ClassTest$X initialized
+Class.forName() returned
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+new instance: gov.nasa.jpf.test.java.lang.ClassTest@43479
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.InstantiationException
+	at java.lang.reflect.Constructor.newInstance(gov.nasa.jpf.vm.JPF_java_lang_reflect_Constructor)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testNewInstanceFailAbstract(gov/nasa/jpf/test/java/lang/ClassTest.java:275)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.InstantiationException  at java.lang.ref..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ClassNotFoundException: class not found: groovy.runtime.metaclass.[Ljava.lang.Object;MetaClass
+	at java.lang.Class.forName(gov.nasa.jpf.vm.JPF_java_lang_Class)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testClassForNameExceptionForInvalidArrayType(gov/nasa/jpf/test/java/lang/ClassTest.java:122)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ClassNotFoundException: class not found:..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.ClassTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ClassNotFoundException: class not found: x.y.NonExisting
+	at java.lang.Class.forName(gov.nasa.jpf.vm.JPF_java_lang_Class)
+	at gov.nasa.jpf.test.java.lang.ClassTest.testClassForNameException(gov/nasa/jpf/test/java/lang/ClassTest.java:112)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ClassNotFoundException: class not found:..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

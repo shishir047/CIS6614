@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.jvm.JVMStackFrameTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:11" hostname="SHISHIRHP" time="0.012">
+  <properties/>
+  <testcase name="testPushLong" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.009"/>
+  <testcase name="testDup2_x2_Attrs" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.002"/>
+  <testcase name="testPushDouble" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.0"/>
+  <testcase name="testDup2_x1" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.0"/>
+  <testcase name="testDup2_x2" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.001"/>
+  <testcase name="testDup2_x1_Attrs" classname="gov.nasa.jpf.jvm.JVMStackFrameTest" time="0.0"/>
+  <system-out><![CDATA[operands = [1 {1},2 {2},3 {3},4 {4}]
+operands = [3 {3},4 {4},1 {1},2 {2},3 {3},4 {4}]
+operands = [1,2,3]
+operands = [2,3,1,2,3]
+operands = [1,2,3,4]
+operands = [3,4,1,2,3,4]
+operands = [1 {1},2 {2},3 {3}]
+operands = [2 {2},3 {3},1 {1},2 {2},3 {3}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

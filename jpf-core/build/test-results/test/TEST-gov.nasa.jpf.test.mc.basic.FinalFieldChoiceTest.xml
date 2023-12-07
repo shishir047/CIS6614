@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.FinalFieldChoiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:29" hostname="SHISHIRHP" time="0.538">
+  <properties/>
+  <testcase name="testFinalInstanceFields" classname="gov.nasa.jpf.test.mc.basic.FinalFieldChoiceTest" time="0.447"/>
+  <testcase name="testFinalStaticFields" classname="gov.nasa.jpf.test.mc.basic.FinalFieldChoiceTest" time="0.09"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.FinalFieldChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+a=false, b=false
+a=false, b=true
+a=true, b=false
+a=true, b=true
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.FinalFieldChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+Y.a=false, Y.b=false
+Y.a=false, Y.b=true
+Y.a=true, Y.b=false
+Y.a=true, Y.b=true
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

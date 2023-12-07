@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:46" hostname="SHISHIRHP" time="0.434">
+  <properties/>
+  <testcase name="testInfiniteRecursion" classname="gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest" time="0.434"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.listener.StackDepthChecker +sdc.max_stack_depth=42
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+entered foo() at level 1
+entered foo() at level 2
+entered foo() at level 3
+entered foo() at level 4
+entered foo() at level 5
+entered foo() at level 6
+entered foo() at level 7
+entered foo() at level 8
+entered foo() at level 9
+entered foo() at level 10
+entered foo() at level 11
+entered foo() at level 12
+entered foo() at level 13
+entered foo() at level 14
+entered foo() at level 15
+entered foo() at level 16
+entered foo() at level 17
+entered foo() at level 18
+entered foo() at level 19
+entered foo() at level 20
+entered foo() at level 21
+entered foo() at level 22
+entered foo() at level 23
+entered foo() at level 24
+entered foo() at level 25
+entered foo() at level 26
+entered foo() at level 27
+entered foo() at level 28
+entered foo() at level 29
+entered foo() at level 30
+entered foo() at level 31
+entered foo() at level 32
+entered foo() at level 33
+entered foo() at level 34
+entered foo() at level 35
+entered foo() at level 36
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.StackOverflowError
+	at gov.nasa.jpf.ConsoleOutputStream.print(gov.nasa.jpf.vm.JPF_gov_nasa_jpf_ConsoleOutputStream)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:34)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.foo(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:37)
+	at gov.nasa.jpf.test.mc.basic.StackDepthCheckerTest.testInfiniteRecursion(gov/nasa/jpf/test/mc/basic/StackDepthCheckerTest.java:46)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.StackOverflowError  at gov.nasa.jpf.Cons..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

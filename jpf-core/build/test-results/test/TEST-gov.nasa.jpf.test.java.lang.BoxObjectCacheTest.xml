@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:37" hostname="SHISHIRHP" time="1.176">
+  <properties/>
+  <testcase name="testLongCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.437"/>
+  <testcase name="testByteCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.102"/>
+  <testcase name="testByteCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.092"/>
+  <testcase name="testCharacterCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.069"/>
+  <testcase name="testCharacterCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.066"/>
+  <testcase name="testShortCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.053"/>
+  <testcase name="testBooleanCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.047"/>
+  <testcase name="testIntCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.053"/>
+  <testcase name="testLongCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.05"/>
+  <testcase name="testShortCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.081"/>
+  <testcase name="testBooleanCacheBoxObject" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.059"/>
+  <testcase name="testIntCache" classname="gov.nasa.jpf.test.java.lang.BoxObjectCacheTest" time="0.065"/>
+  <system-out><![CDATA[  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.cache.low_byte=-100 +vm.cache.high_byte=100 +vm.cache.high_char=100 +vm.cache.low_short=-100 +vm.cache.high_short=100 +vm.cache.low_int=-100 +vm.cache.high_int=100 +vm.cache.low_long=-100 +vm.cache.high_long=100
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.BoxObjectCacheTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

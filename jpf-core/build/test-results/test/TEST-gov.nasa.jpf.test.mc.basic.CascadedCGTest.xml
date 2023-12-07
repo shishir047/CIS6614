@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.CascadedCGTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:24" hostname="SHISHIRHP" time="0.637">
+  <properties/>
+  <testcase name="testCascadedIntIntervals" classname="gov.nasa.jpf.test.mc.basic.CascadedCGTest" time="0.478"/>
+  <testcase name="testMixedThreadDataCGs" classname="gov.nasa.jpf.test.mc.basic.CascadedCGTest" time="0.159"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.test.mc.basic.CascadedCGTest$IntChoiceCascader
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CascadedCGTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# listener registered gov.nasa.jpf.vm.choice.IntIntervalGenerator[id="listenerCG",isCascaded:false,3..4,delta=+1,cur=2]
+# current listener CG choice: 3
+# current insn CG choice: 1
+i=1
+# current listener CG choice: 4
+# current insn CG choice: 1
+i=1
+# current listener CG choice: 3
+# current insn CG choice: 2
+i=2
+# current listener CG choice: 4
+# current insn CG choice: 2
+i=2
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.test.mc.basic.CascadedCGTest$FieldAccessCascader
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CascadedCGTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# started thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+#------ 0 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"START" ,1/2,isCascaded:false}
+<main> mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 1 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"TERMINATE" ,1/1,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,43]
+#------ 2 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,>42,43]
+# listener replacing 7 with 42
+<thread> mySharedField read: 42
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 3 isNew: true, isEnd: true
+#------ [3] backtrack: 2
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,>43]
+# listener replacing 7 with 43
+<thread> mySharedField read: 43
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 3 isNew: false, isEnd: true
+#------ [3] backtrack: 2
+#------ [2] backtrack: 1
+#------ [1] backtrack: 0
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"START" ,2/2,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,43]
+#------ 4 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"SHARED_OBJECT" ,1/2,isCascaded:true}
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,>42,43]
+# running thread: ThreadInfo [name=main,id=0,state=RUNNING]
+#------ 5 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"SHARED_OBJECT" ,1/2,isCascaded:false}
+<main> mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 2 isNew: false, isEnd: false
+#------ [3] backtrack: 5
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"SHARED_OBJECT" ,2/2,isCascaded:false}
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener registered CG: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,43]
+#------ 5 isNew: false, isEnd: false
+#------ [3] backtrack: 5
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,>43]
+#------ 5 isNew: false, isEnd: false
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"SHARED_OBJECT" ,2/2,isCascaded:true}
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,>42,43]
+# running thread: ThreadInfo [name=Thread-1,id=1,state=RUNNING]
+# listener replacing -1 with 42
+<thread> mySharedField read: 42
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 6 isNew: true, isEnd: false
+# choice: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"TERMINATE" ,1/1,isCascaded:false}
+# running thread: ThreadInfo [name=main,id=0,state=RUNNING]
+<main> mySharedField write: 7
+# terminated thread: ThreadInfo [name=main,id=0,state=TERMINATED]
+#------ 3 isNew: false, isEnd: true
+#------ [3] backtrack: 6
+#------ [2] backtrack: 4
+# choice: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="fieldReplace",isCascaded:false,42,>43]
+# listener replacing -1 with 43
+<thread> mySharedField read: 43
+# terminated thread: ThreadInfo [name=Thread-1,id=1,state=TERMINATED]
+#------ 6 isNew: false, isEnd: false
+#------ [2] backtrack: 4
+#------ [1] backtrack: 0
+#------ [0] backtrack: -1
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

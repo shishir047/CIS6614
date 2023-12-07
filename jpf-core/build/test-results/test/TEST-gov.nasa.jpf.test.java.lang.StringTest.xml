@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.lang.StringTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:52" hostname="SHISHIRHP" time="1.331">
+  <properties/>
+  <testcase name="testEndsWith" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.418"/>
+  <testcase name="testNullChar" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.089"/>
+  <testcase name="testTrim" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.098"/>
+  <testcase name="testConstructors" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.101"/>
+  <testcase name="testCompareTo" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.067"/>
+  <testcase name="testToCharArray" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.05"/>
+  <testcase name="testMethods" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.09"/>
+  <testcase name="testReplace" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.05"/>
+  <testcase name="testContentEquals" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.109"/>
+  <testcase name="testConcat" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.058"/>
+  <testcase name="testEquals" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.053"/>
+  <testcase name="testIntern" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.049"/>
+  <testcase name="testIndexOf" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.048"/>
+  <testcase name="testStartsWith" classname="gov.nasa.jpf.test.java.lang.StringTest" time="0.051"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] orphan NativePeer method: java.lang.StringCoding.decode([BII)[C
+[WARNING] orphan NativePeer method: java.lang.StringCoding.encode([CII)[B
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] orphan NativePeer method: java.lang.StringCoding.decode([BII)[C
+[WARNING] orphan NativePeer method: java.lang.StringCoding.encode([CII)[B
+3.141592653589793
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.StringTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

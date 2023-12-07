@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.basic.HarnessTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:13" hostname="SHISHIRHP" time="0.788">
+  <properties/>
+  <testcase name="verifyAssert" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.435"/>
+  <testcase name="verifyJPFExcept" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.003"/>
+  <testcase name="noViolation" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.091"/>
+  <testcase name="testLowLevelAPI" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.102"/>
+  <testcase name="verifyRuntimeException" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.096"/>
+  <testcase name="verifyNullPointerException" classname="gov.nasa.jpf.test.basic.HarnessTest" time="0.059"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.HarnessTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+** this is verifyAssert() - JPF should find an AssertionError
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: wrong answer..
+	at gov.nasa.jpf.test.basic.HarnessTest.verifyAssert(gov/nasa/jpf/test/basic/HarnessTest.java:48)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: wrong answer..  at gov.n..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args: +vm.class=InvalidVMClass +pass_exceptions
+[SEVERE] JPF configuration error: class not found InvalidVMClass by classloader: gov.nasa.jpf.JPFClassLoader@289710d9
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.HarnessTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+** this is noViolation() - it should succeed
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.HarnessTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+** this is low level API test - it should succeed
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.HarnessTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+** this is verifyRuntimeException() - JPF should find an unhandled exception
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: Bang!
+	at gov.nasa.jpf.test.basic.HarnessTest.verifyRuntimeException(gov/nasa/jpf/test/basic/HarnessTest.java:68)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: Bang!  at gov.nasa.jpf..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.HarnessTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+** this is verifyNullPointerException() - JPF should find an NPE
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.NullPointerException: Calling 'length()I' on null object
+	at gov.nasa.jpf.test.basic.HarnessTest.verifyNullPointerException(gov/nasa/jpf/test/basic/HarnessTest.java:59)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.NullPointerException: Calling 'length()I..."
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

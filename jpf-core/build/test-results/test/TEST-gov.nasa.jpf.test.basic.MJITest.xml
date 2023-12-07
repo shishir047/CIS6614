@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.basic.MJITest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:16" hostname="SHISHIRHP" time="1.238">
+  <properties/>
+  <testcase name="testNativeInit" classname="gov.nasa.jpf.test.basic.MJITest" time="0.456"/>
+  <testcase name="testNativeCreateStringArray" classname="gov.nasa.jpf.test.basic.MJITest" time="0.094"/>
+  <testcase name="testNativeClInit" classname="gov.nasa.jpf.test.basic.MJITest" time="0.098"/>
+  <testcase name="testNativeCreate2DimIntArray" classname="gov.nasa.jpf.test.basic.MJITest" time="0.08"/>
+  <testcase name="testNativeCreateIntArray" classname="gov.nasa.jpf.test.basic.MJITest" time="0.062"/>
+  <testcase name="testHiddenRoundtripException" classname="gov.nasa.jpf.test.basic.MJITest" time="0.068"/>
+  <testcase name="testNativeException" classname="gov.nasa.jpf.test.basic.MJITest" time="0.064"/>
+  <testcase name="testNativeStaticMethod" classname="gov.nasa.jpf.test.basic.MJITest" time="0.049"/>
+  <testcase name="testNativeCrash" classname="gov.nasa.jpf.test.basic.MJITest" time="0.062"/>
+  <testcase name="testRoundtripLoop" classname="gov.nasa.jpf.test.basic.MJITest" time="0.093"/>
+  <testcase name="testNativeInstanceMethod" classname="gov.nasa.jpf.test.basic.MJITest" time="0.063"/>
+  <testcase name="testHiddenRoundtrip" classname="gov.nasa.jpf.test.basic.MJITest" time="0.046"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering native <init>(I)
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeCreateStringArray()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeCreate2DimIntArray()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeCreateIntArray()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+## entering testHiddenroundtripException()
+## in echo : 20
+# entering nativeHiddenRoundtrip: -1
+## in atomicStuff : -1
+## atomicStuff throwing IllegalArgumentException
+# hidden method execution failed, leaving nativeHiddenRoundtrip: gov.nasa.jpf.vm.UncaughtException: uncaught exception in thread main #0 : java.lang.IllegalArgumentException : "negative atomicStuff argument"
+## exiting testHiddenroundtripException()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeException()
+java.lang.UnsupportedOperationException: caught me
+	at gov.nasa.jpf.test.basic.MJITest.nativeException(gov.nasa.jpf.test.basic.JPF_gov_nasa_jpf_test_basic_MJITest)
+	at gov.nasa.jpf.test.basic.MJITest.testNativeException(gov/nasa/jpf/test/basic/MJITest.java:115)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeStaticMethod()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeCrash()
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeRoundtripLoop(): 42
+### roundtrip 43
+# entering nativeInnerRoundtrip()
+# entering nativeRoundtripLoop(): 42
+### roundtrip 46
+# entering nativeInnerRoundtrip()
+# entering nativeRoundtripLoop(): 42
+### roundtrip 49
+# entering nativeInnerRoundtrip()
+# entering nativeRoundtripLoop(): 42
+### roundtrip 52
+# entering nativeInnerRoundtrip()
+# entering nativeRoundtripLoop(): 42
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+# entering nativeInstanceMethod() d=2.0, c=?, b=true, i=40
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.MJITest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# entering native <clinit>
+## entering testHiddenroundtrip()
+## in echo : 20
+# entering nativeHiddenRoundtrip: 21
+## in atomicStuff : 21
+## in echo : 22
+# exit nativeHiddenRoundtrip: 22
+## exiting testHiddenroundtrip()
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

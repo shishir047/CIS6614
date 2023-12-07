@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.SkipInstructionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:45" hostname="SHISHIRHP" time="0.527">
+  <properties/>
+  <testcase name="testGETFIELD" classname="gov.nasa.jpf.test.mc.basic.SkipInstructionTest" time="0.422"/>
+  <testcase name="testSkipMethodBody" classname="gov.nasa.jpf.test.mc.basic.SkipInstructionTest" time="0.104"/>
+  <system-out><![CDATA[  running jpf with args: +listener=gov.nasa.jpf.test.mc.basic.SkipInstructionTest$GetFieldListener
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SkipInstructionTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+now intercepting: getfield gov.nasa.jpf.test.mc.basic.SkipInstructionTest.answer
+42
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=gov.nasa.jpf.test.mc.basic.SkipInstructionTest$InvokeListener
+method to intercept: MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I]
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.SkipInstructionTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+in MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I]
+in top half: invokevirtual gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I
+in MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I]
+in bottom half: iload_1
+listener is skipping method body of MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I] returning 42
+42
+in MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I]
+in bottom half: iload_1
+listener is skipping method body of MethodInfo[gov.nasa.jpf.test.mc.basic.SkipInstructionTest.foo(II)I] returning 43
+43
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.jvm.ClassInfoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:10" hostname="SHISHIRHP" time="0.108">
+  <properties/>
+  <testcase name="testClassFileInitialization" classname="gov.nasa.jpf.jvm.ClassInfoTest" time="0.108"/>
+  <system-out><![CDATA[-- declared instance fields
+java.lang.String s
+
+-- methods
+<init>(Ljava/lang/String;)V
+whatIsIt()I
+isItTheAnswer(ZILjava/lang/String;)Z
+foo()V
+getString()Ljava/lang/String;
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

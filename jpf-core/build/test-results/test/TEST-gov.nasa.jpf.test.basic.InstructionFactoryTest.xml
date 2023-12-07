@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.basic.InstructionFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:14" hostname="SHISHIRHP" time="0.462">
+  <properties/>
+  <testcase name="testDadd" classname="gov.nasa.jpf.test.basic.InstructionFactoryTest" time="0.462"/>
+  <system-out><![CDATA[  running jpf with args: +jvm.insn_factory.class=.test.basic.InstructionFactoryTest$MyInsnFactory
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.basic.InstructionFactoryTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:34 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+DADD 10.666667 + 1.000000 => 11.666667
+ ..but we negate it just for kicks..
+DADD 1.000000 + 41.000000 => 42.000000
+ ..but we negate it just for kicks..
+b=-42.0
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:34 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

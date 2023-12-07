@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fault.injection.examples.CRCTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:08" hostname="SHISHIRHP" time="0.008">
+  <properties/>
+  <testcase name="testNull" classname="fault.injection.examples.CRCTest" time="0.001"/>
+  <testcase name="testPositive" classname="fault.injection.examples.CRCTest" time="0.007"/>
+  <testcase name="testIllegal" classname="fault.injection.examples.CRCTest" time="0.0"/>
+  <testcase name="testNegative" classname="fault.injection.examples.CRCTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

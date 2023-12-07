@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.RestorerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:40" hostname="SHISHIRHP" time="0.568">
+  <properties/>
+  <testcase name="testRestoredInsnCount" classname="gov.nasa.jpf.test.mc.basic.RestorerTest" time="0.454"/>
+  <testcase name="testRestoredInsnCountBFS" classname="gov.nasa.jpf.test.mc.basic.RestorerTest" time="0.114"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.RestorerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+--- 1. CG: false
+## storing: 0
+I am X #1
+I am X #2
+I am X #3
+I am X #4
+I am X #5
+--- 2. CG: false
+## storing: 0
+I am X #1
+## restoring: 0
+--- 2. CG: true
+## storing: 0
+I am X #1
+## restoring: 0
+## restoring: 0
+--- 1. CG: true
+## storing: 0
+I am X #1
+I am X #2
+I am X #3
+I am X #4
+I am X #5
+--- 2. CG: false
+## storing: 0
+I am X #1
+## restoring: 0
+--- 2. CG: true
+## storing: 0
+I am X #1
+## restoring: 0
+## restoring: 0
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +search.class=.search.heuristic.BFSHeuristic
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.RestorerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+--- 1. CG: false
+## storing: 0
+I am X #1
+I am X #2
+I am X #3
+I am X #4
+I am X #5
+## restoring: 0
+--- 1. CG: true
+## storing: 0
+I am X #1
+I am X #2
+I am X #3
+I am X #4
+I am X #5
+## restoring: 0
+## restoring: 0
+--- 2. CG: false
+## storing: 0
+I am X #1
+## restoring: 0
+--- 2. CG: true
+## storing: 0
+I am X #1
+## restoring: 0
+## restoring: 0
+--- 2. CG: false
+## storing: 0
+I am X #1
+## restoring: 0
+--- 2. CG: true
+## storing: 0
+I am X #1
+## restoring: 0
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

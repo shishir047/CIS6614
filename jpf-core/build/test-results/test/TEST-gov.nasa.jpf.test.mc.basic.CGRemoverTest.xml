@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.CGRemoverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:22" hostname="SHISHIRHP" time="0.68">
+  <properties/>
+  <testcase name="testSyncBody" classname="gov.nasa.jpf.test.mc.basic.CGRemoverTest" time="0.449"/>
+  <testcase name="testSyncCall" classname="gov.nasa.jpf.test.mc.basic.CGRemoverTest" time="0.102"/>
+  <testcase name="testSyncLocation" classname="gov.nasa.jpf.test.mc.basic.CGRemoverTest" time="0.128"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.listener.CGRemover,.test.mc.basic.CGRemoverTest$R1Listener +log.info=gov.nasa.jpf.CGRemover +cgrm.sync.cg_class=gov.nasa.jpf.vm.ThreadChoiceGenerator +cgrm.sync.method_bodies=gov.nasa.jpf.test.mc.basic.CGRemoverTest$R1.run(),gov.nasa.jpf.test.mc.basic.CGRemoverTest.testSyncBody()
+[INFO] added category: sync
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CGRemoverTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.listener.CGRemover,.test.mc.basic.CGRemoverTest$R1Listener +log.info=gov.nasa.jpf.CGRemover +cgrm.sync.cg_class=gov.nasa.jpf.vm.ThreadChoiceGenerator +cgrm.sync.method_calls=gov.nasa.jpf.test.mc.basic.CGRemoverTest$R1.getData()
+[INFO] added category: sync
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CGRemoverTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +listener=.listener.CGRemover,.test.mc.basic.CGRemoverTest$R1Listener +log.info=gov.nasa.jpf.CGRemover +cgrm.sync.cg_class=gov.nasa.jpf.vm.ThreadChoiceGenerator +cgrm.sync.locations=CGRemoverTest.java:45,CGRemoverTest.java:75
+[INFO] added category: sync
+[WARNING] no insns for location: CGRemoverTest\.java:45 in class: gov.nasa.jpf.test.mc.basic.CGRemoverTest
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.CGRemoverTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] no insns for location: CGRemoverTest\.java:75 in class: gov.nasa.jpf.test.mc.basic.CGRemoverTest$R1
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+[INFO] removed CG: gov.nasa.jpf.vm.choice.ThreadChoiceFromSet {id:"LOCK" ,0/2,isCascaded:false}
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

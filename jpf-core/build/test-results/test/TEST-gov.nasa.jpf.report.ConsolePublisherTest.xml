@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.report.ConsolePublisherTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:12" hostname="SHISHIRHP" time="0.771">
+  <properties/>
+  <testcase name="testPlatform" classname="gov.nasa.jpf.report.ConsolePublisherTest" time="0.414"/>
+  <testcase name="testDTG" classname="gov.nasa.jpf.report.ConsolePublisherTest" time="0.101"/>
+  <testcase name="testJPF" classname="gov.nasa.jpf.report.ConsolePublisherTest" time="0.091"/>
+  <testcase name="testSUT" classname="gov.nasa.jpf.report.ConsolePublisherTest" time="0.094"/>
+  <testcase name="testUser" classname="gov.nasa.jpf.report.ConsolePublisherTest" time="0.071"/>
+  <system-out><![CDATA[  running jpf with args: +report.publisher=console +report.console.start=platform
+  running jpf with args: +report.publisher=console +report.console.start=dtg
+  running jpf with args: +report.publisher=console +report.console.start=jpf
+  running jpf with args: +report.publisher=console +report.console.start=sut
+  running jpf with args: +report.publisher=console +report.console.start=user
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

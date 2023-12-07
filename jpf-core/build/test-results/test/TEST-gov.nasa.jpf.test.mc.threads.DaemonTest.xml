@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.threads.DaemonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:15" hostname="SHISHIRHP" time="0.479">
+  <properties/>
+  <testcase name="testRace" classname="gov.nasa.jpf.test.mc.threads.DaemonTest" time="0.479"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.DaemonTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: blow up
+	at gov.nasa.jpf.test.mc.threads.DaemonTest$T1.run(gov/nasa/jpf/test/mc/threads/DaemonTest.java:42)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+
+thread gov.nasa.jpf.test.mc.threads.DaemonTest$T1:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:true,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.DaemonTest$T1.run(DaemonTest.java:42)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: blow up  at gov.nasa.j..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

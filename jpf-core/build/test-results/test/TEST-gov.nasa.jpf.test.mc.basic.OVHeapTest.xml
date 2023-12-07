@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.OVHeapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:38" hostname="SHISHIRHP" time="0.528">
+  <properties/>
+  <testcase name="testSGOIDs" classname="gov.nasa.jpf.test.mc.basic.OVHeapTest" time="0.528"/>
+  <system-out><![CDATA[  running jpf with args: +vm.heap.class=.vm.OVHeap
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.OVHeapTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+from M  ,object: Y.class, ref: 574 new
+from M  ,object: X.class, ref: 571 new
+-- M next X[] arraysize = 1
+from M  ,object: xs-0, ref: 868 new
+from M  ,object: m-y1, ref: 883 new
+from M  ,object: m-x1, ref: 888 new
+from T  ,object: X.class, ref: 571 seen
+from T  ,object: t-x1, ref: 899 new
+from T  ,object: t-y1, ref: 904 new
+-- M next X[] arraysize = 2
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 new
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+-- M next X[] arraysize = 3
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 seen
+from M  ,object: xs-2, ref: 923 new
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+from T  ,object: X.class, ref: 571 seen
+from T  ,object: t-x1, ref: 899 seen
+from M  ,object: Y.class, ref: 574 seen
+from M  ,object: X.class, ref: 571 seen
+-- M next X[] arraysize = 1
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+from T  ,object: t-y1, ref: 904 seen
+-- M next X[] arraysize = 2
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+-- M next X[] arraysize = 3
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 seen
+from M  ,object: xs-2, ref: 923 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+from T  ,object: t-y1, ref: 904 seen
+from M  ,object: Y.class, ref: 574 seen
+from M  ,object: X.class, ref: 571 seen
+-- M next X[] arraysize = 1
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+-- M next X[] arraysize = 2
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+-- M next X[] arraysize = 3
+from M  ,object: xs-0, ref: 868 seen
+from M  ,object: xs-1, ref: 911 seen
+from M  ,object: xs-2, ref: 923 seen
+from M  ,object: m-y1, ref: 883 seen
+from M  ,object: m-x1, ref: 888 seen
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

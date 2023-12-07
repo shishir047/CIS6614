@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.java.lang.reflect.FieldTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:59" hostname="SHISHIRHP" time="1.571">
+  <properties/>
+  <testcase name="getInaccessibleClassFieldErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.448"/>
+  <testcase name="getSamePackageNonPrivateFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.111"/>
+  <testcase name="setFinalFieldErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.1"/>
+  <testcase name="getParentProtectedFieldOnParentInstanceErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.099"/>
+  <testcase name="getParentProtectedFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.078"/>
+  <testcase name="getOwnClassFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.056"/>
+  <testcase name="getPublicClassPublicFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.053"/>
+  <testcase name="getDeclaredAnnotationsTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.069"/>
+  <testcase name="isEnumConstantTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.054"/>
+  <testcase name="equalsTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.082"/>
+  <testcase name="toStringTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.052"/>
+  <testcase name="getOtherPackageProtectedFieldErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.045"/>
+  <testcase name="getSamePackagePrivateFieldErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.045"/>
+  <testcase name="getOtherPackagePackagePrivateFieldErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.053"/>
+  <testcase name="hashCodeTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.043"/>
+  <testcase name="getParentStaticProtectedFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.085"/>
+  <testcase name="getParentProtectedFieldOnSiblingInstanceErrorTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.039"/>
+  <testcase name="getSetShortFieldTest" classname="gov.nasa.jpf.test.java.lang.reflect.FieldTest" time="0.057"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: static int gov.nasa.jpf.test.java.lang.reflect.other_package.OtherPackageInternalClass.publicStaticField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getInaccessibleClassFieldErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:125)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: final int gov.nasa.jpf.test.java.lang.reflect.FieldTest.privFinalField
+	at java.lang.reflect.Field.setInt(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.setFinalFieldErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:74)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: int gov.nasa.jpf.test.java.lang.reflect.other_package.OtherPackageParent.parentStaticField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.SamePackageClass.getParentProtectedFieldOnParentInstanceError(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:276)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getParentProtectedFieldOnParentInstanceErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:164)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+public static final int gov.nasa.jpf.test.java.lang.reflect.FieldTest.testField1
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: int gov.nasa.jpf.test.java.lang.reflect.other_package.OtherPackagePublicClass.protectedField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getOtherPackageProtectedFieldErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:94)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: int gov.nasa.jpf.test.java.lang.reflect.SamePackageClass.privateField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getSamePackagePrivateFieldErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:143)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: int gov.nasa.jpf.test.java.lang.reflect.other_package.OtherPackagePublicClass.packagePrivateField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getOtherPackagePackagePrivateFieldErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:102)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.IllegalAccessException: field not accessible: int gov.nasa.jpf.test.java.lang.reflect.other_package.OtherPackageParent.parentStaticField
+	at java.lang.reflect.Field.get(gov.nasa.jpf.vm.JPF_java_lang_reflect_Field)
+	at gov.nasa.jpf.test.java.lang.reflect.SamePackageClass.getParentProtectedFieldOnSiblingInstanceError(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:281)
+	at gov.nasa.jpf.test.java.lang.reflect.FieldTest.getParentProtectedFieldOnSiblingInstanceErrorTest(gov/nasa/jpf/test/java/lang/reflect/FieldTest.java:171)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.IllegalAccessException: field not access..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.java.lang.reflect.FieldTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

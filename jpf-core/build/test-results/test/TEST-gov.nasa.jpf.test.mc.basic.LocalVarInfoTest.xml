@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.basic.LocalVarInfoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:32" hostname="SHISHIRHP" time="0.475">
+  <properties/>
+  <testcase name="testLookup" classname="gov.nasa.jpf.test.mc.basic.LocalVarInfoTest" time="0.475"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.test.mc.basic.LocalVarInfoTest$TestLookupListener
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.basic.LocalVarInfoTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+---- testLookup()V entered
+ LocalVarInfos (should have {'this', 'x', 'y'} : 
+    LocalVarInfo[name="x",signature="I",startPC=19,endPC=27,slotIndex=1]
+    LocalVarInfo[name="y",signature="I",startPC=21,endPC=27,slotIndex=2]
+    LocalVarInfo[name="this",signature="Lgov/nasa/jpf/test/mc/basic/LocalVarInfoTest;",startPC=0,endPC=38,slotIndex=0]
+
+  0: aload_0 : LocalVarInfo[name="this",signature="Lgov/nasa/jpf/test/mc/basic/LocalVarInfoTest;",startPC=0,endPC=38,slotIndex=0]
+  1: iconst_1
+  2: anewarray
+  5: dup
+  6: iconst_0
+  7: ldc
+  9: aastore
+ 10: invokevirtual gov.nasa.jpf.test.mc.basic.LocalVarInfoTest.verifyNoPropertyViolation([Ljava/lang/String;)Z
+ 13: ifeq 28
+ 16: bipush
+ 18: istore_1 : LocalVarInfo[name="x",signature="I",startPC=19,endPC=27,slotIndex=1]
+ 19: iload_1 : LocalVarInfo[name="x",signature="I",startPC=19,endPC=27,slotIndex=1]
+ 20: istore_2 : LocalVarInfo[name="y",signature="I",startPC=21,endPC=27,slotIndex=2]
+ 21: getstatic java.lang.System.out
+ 24: iload_2 : LocalVarInfo[name="y",signature="I",startPC=21,endPC=27,slotIndex=2]
+ 25: invokevirtual java.io.PrintStream.println(I)V
+42
+ 28: invokestatic gov.nasa.jpf.test.mc.basic.LocalVarInfoTest.isJPFRun()Z
+ 31: ifne 38
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+--- local var access log: 
+ALOAD this
+ISTORE x
+ILOAD x
+ISTORE y
+ILOAD y
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
