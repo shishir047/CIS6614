@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fault.injection.examples.BCDEncodedISBNTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:34:07" hostname="SHISHIRHP" time="0.003">
+  <properties/>
+  <testcase name="test10InvalidLength" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.002"/>
+  <testcase name="test13InvalidDigit" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test13Positive" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test13Negative" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test10InvalidDigit" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test10Positive" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test10Negative" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <testcase name="test13InvalidLength" classname="fault.injection.examples.BCDEncodedISBNTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
