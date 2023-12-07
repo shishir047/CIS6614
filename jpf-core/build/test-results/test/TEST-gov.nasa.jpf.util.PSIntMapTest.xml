@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.PSIntMapTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:39" hostname="SHISHIRHP" time="0.087">
+  <properties/>
+  <testcase name="testHeapPattern" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.037"/>
+  <testcase name="testConsecutiveAdd" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.019"/>
+  <testcase name="testRangePredicateRemoval" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.008"/>
+  <testcase name="testConsecutiveAddRemove" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.013"/>
+  <testcase name="testSingleAdd" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.003"/>
+  <testcase name="testPredicateRemoval" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.003"/>
+  <testcase name="testMultiAdd" classname="gov.nasa.jpf.util.PSIntMapTest" time="0.002"/>
+  <system-out><![CDATA[m.size() = 16201
+m.size() = 32768
+m.size() = 19968
+m.size() = 19937
+m.size() = 0
+0:  PSIntMap {0} 
+42:  PSIntMap {42} 
+32**4 + 1:  PSIntMap {1048577} 
+OneNode
+                 1: OneNode
+                     0: OneNode
+                         0: OneNode
+                             0: OneNode (target)
+                                 1: value=1048577
+--------------- staging
+OneNode (target)
+ 1: value=1048577
+before removal: PSIntMap {0,1,4,10,32,36,37,95,97,666,669} 
+after removal: PSIntMap {0,4,10,32,36,666} 
+BitmapNode
+     0: BitmapNode
+         0: value=0
+         4: value=4
+        10: value=10
+     1: BitmapNode
+         0: value=32
+         4: value=36
+    20: OneNode
+        26: value=666
+PSIntMap {0,1,4,10,32,36,37,666,669} 
+assertEquals {0,1,4,10,32,36,37,666,669}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

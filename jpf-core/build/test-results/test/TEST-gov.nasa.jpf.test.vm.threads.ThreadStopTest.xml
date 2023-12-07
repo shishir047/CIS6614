@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.threads.ThreadStopTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:25" hostname="SHISHIRHP" time="1.115">
+  <properties/>
+  <testcase name="testStopBlocked" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.433"/>
+  <testcase name="testStopJoin" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.127"/>
+  <testcase name="testStopSelf" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.123"/>
+  <testcase name="testStopNewSyncThread" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.084"/>
+  <testcase name="testStopHandler" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.066"/>
+  <testcase name="testStopWaiting" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.063"/>
+  <testcase name="testStopNewThread" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.057"/>
+  <testcase name="testStopTerminated" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.071"/>
+  <testcase name="testStopRunning" classname="gov.nasa.jpf.test.vm.threads.ThreadStopTest" time="0.09"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting t
+# t running, now blocking on lock..
+# main now stopping t
+# main now releasing lock
+# main now joining the stopped thread..
+# main joined thread
+# main now joining the stopped thread..
+# main joined thread
+# t running, now blocking on lock..
+# main now stopping t
+# main now releasing lock
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# waitee running
+# waitee now waiting for main to signal..
+# main now starting t
+# t now joining waitee..
+# main now stopping t
+# main now notifying waitee
+# main now joining waitee
+# waitee terminating
+# main now joining t
+# main now joining t
+# main now joining t
+# waitee terminating
+# main now joining t
+# waitee terminating
+# main now joining waitee
+# main now joining waitee
+# main now joining t
+# t now joining waitee..
+# main now stopping t
+# main now notifying waitee
+# waitee running
+# waitee now waiting for main to signal..
+# main now starting t
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting the thread
+# main now joining the thread..
+# t running
+# main now joining the thread..
+# t running
+# t running
+# main now joining the thread..
+# main now joining the thread..
+# main joined thread
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# now starting the stopped thread
+# main got past start of stopped sync thread
+# main released lock for stopped sync thread
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting t
+# t running, now waiting on lock
+# main now stopping t
+# main now notifying
+# main now joining the stopped thread..
+# t caught ThreadDeath
+# main joined thread
+# t caught ThreadDeath
+# main now joining the stopped thread..
+# main now joining the stopped thread..
+# main joined thread
+# t running, now waiting on lock
+# main now stopping t
+# main now notifying
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting t
+# t running, now waiting on lock
+# main now stopping t
+# main now notifying
+# main now joining the stopped thread..
+# main joined thread
+# main now joining the stopped thread..
+# main joined thread
+# t running, now waiting on lock
+# main now stopping t
+# main now notifying
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# now starting the stopped thread
+# main got past start of stopped thread
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting t
+# t running
+# main now stopping dead t
+# main survived stopping t
+# t running
+# main now stopping dead t
+# main survived stopping t
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadStopTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+# main now starting t
+# t running
+# main now stopping t
+# main now joining the stopped thread..
+# main joined thread
+# t running
+# main now stopping t
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

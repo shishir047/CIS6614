@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.threads.NestedInitTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:23" hostname="SHISHIRHP" time="0.813">
+  <properties/>
+  <testcase name="testNestedInitSingleOk" classname="gov.nasa.jpf.test.mc.threads.NestedInitTest" time="0.4"/>
+  <testcase name="testCyclicHierarchyDeadlock" classname="gov.nasa.jpf.test.mc.threads.NestedInitTest" time="0.13"/>
+  <testcase name="testSymmetricDeadlock" classname="gov.nasa.jpf.test.mc.threads.NestedInitTest" time="0.118"/>
+  <testcase name="testNestedInitConcurrentOk" classname="gov.nasa.jpf.test.mc.threads.NestedInitTest" time="0.165"/>
+  <system-out><![CDATA[  running jpf with args: +jvm.nested_init
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.NestedInitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+Derived.data = 42
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +jvm.nested_init
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.NestedInitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread gov.nasa.jpf.test.mc.threads.NestedInitTest$3:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Class@23b
+  blocked on: java.lang.Class@23e
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest$CyclicBase.<clinit>(NestedInitTest.java:118)
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest.testCyclicHierarchyDeadlock(NestedInitTest.java:134)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+thread gov.nasa.jpf.test.mc.threads.NestedInitTest$3:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Class@23e
+  blocked on: java.lang.Class@23b
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest$3.run(NestedInitTest.java:130)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty "deadlock encountered:    thread java.lang.Thread:{..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +jvm.nested_init
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.NestedInitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread gov.nasa.jpf.test.mc.threads.NestedInitTest$2:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Class@23b
+  blocked on: java.lang.Class@23e
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest$B.<clinit>(NestedInitTest.java:101)
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest.testSymmetricDeadlock(NestedInitTest.java:112)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+thread gov.nasa.jpf.test.mc.threads.NestedInitTest$2:{id:1,name:Thread-1,status:BLOCKED,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  owned locks:java.lang.Class@23e
+  blocked on: java.lang.Class@23b
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest$A.<clinit>(NestedInitTest.java:97)
+	at gov.nasa.jpf.test.mc.threads.NestedInitTest$2.run(NestedInitTest.java:109)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty "deadlock encountered:    thread java.lang.Thread:{..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +jvm.nested_init
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.NestedInitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = main: Derived.data = 42
+42
+42
+42
+42
+42
+42
+main: Derived.data = main: Derived.data = 42
+main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = Thread-1 in Root.<clinit>()
+Thread-1 in Base.<clinit>()
+Thread-1 in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = main: Derived.data = 42
+main: Derived.data = main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+main in Root.<clinit>()
+main in Base.<clinit>()
+main in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = 42
+42
+t: Derived.data = main: Derived.data = main: Derived.data = t: Derived.data = 42
+main: Derived.data = 42
+Thread-1 in Root.<clinit>()
+Thread-1 in Base.<clinit>()
+Thread-1 in Derived.<clinit>()
+main: Derived.data = 42
+t: Derived.data = 42
+t: Derived.data = t: Derived.data = t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+Thread-1 in Root.<clinit>()
+Thread-1 in Base.<clinit>()
+Thread-1 in Derived.<clinit>()
+main: Derived.data = t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+Thread-1 in Root.<clinit>()
+Thread-1 in Base.<clinit>()
+Thread-1 in Derived.<clinit>()
+main: Derived.data = t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+t: Derived.data = 42
+main: Derived.data = 42
+Thread-1 in Root.<clinit>()
+Thread-1 in Base.<clinit>()
+Thread-1 in Derived.<clinit>()
+t: Derived.data = 42
+main: Derived.data = 42
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.CrossingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:56" hostname="SHISHIRHP" time="0.881">
+  <properties/>
+  <testcase name="testBFSHeuristic" classname="gov.nasa.jpf.test.mc.data.CrossingTest" time="0.653"/>
+  <testcase name="testNoHeuristic" classname="gov.nasa.jpf.test.mc.data.CrossingTest" time="0.228"/>
+  <system-out><![CDATA[  running jpf with args: +search.class=gov.nasa.jpf.search.heuristic.BFSHeuristic
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.CrossingTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+total time = 17
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: total > 17  |  total = 17
+	at gov.nasa.jpf.test.mc.data.CrossingTest.run(gov/nasa/jpf/test/mc/data/CrossingTest.java:225)
+	at gov.nasa.jpf.test.mc.data.CrossingTest.testBFSHeuristic(gov/nasa/jpf/test/mc/data/CrossingTest.java:279)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: total > 17  |  total = 1..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.CrossingTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+total time = 17
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: total > 17  |  total = 17
+	at gov.nasa.jpf.test.mc.data.CrossingTest.run(gov/nasa/jpf/test/mc/data/CrossingTest.java:225)
+	at gov.nasa.jpf.test.mc.data.CrossingTest.testNoHeuristic(gov/nasa/jpf/test/mc/data/CrossingTest.java:273)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: total > 17  |  total = 1..."
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

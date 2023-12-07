@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.NativeStateHolderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:03" hostname="SHISHIRHP" time="0.449">
+  <properties/>
+  <testcase name="testNativeStateHolder" classname="gov.nasa.jpf.test.mc.data.NativeStateHolderTest" time="0.449"/>
+  <system-out><![CDATA[  running jpf with args: +listener=gov.nasa.jpf.test.mc.data.NativeStateHolderTest$NSHListener
+transition: 1, nativeState modified: 1
+native state holder registered
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.NativeStateHolderTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+transition: 2, nativeState modified: 2
+cg advanced, isNewState: true
+transition: 3, nativeState modified: 3
+cg advanced, isNewState: true
+transition: 4, nativeState modified: 4
+cg advanced, isNewState: true
+transition: 5, nativeState modified: 5
+cg advanced, isNewState: true
+transition: 6, no nativeState change
+cg advanced, isNewState: false
+state backtracked
+state backtracked
+state backtracked
+state backtracked
+state backtracked
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

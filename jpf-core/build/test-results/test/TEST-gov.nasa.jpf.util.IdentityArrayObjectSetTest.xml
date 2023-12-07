@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.IdentityArrayObjectSetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:35" hostname="SHISHIRHP" time="0.006">
+  <properties/>
+  <testcase name="testBasic" classname="gov.nasa.jpf.util.IdentityArrayObjectSetTest" time="0.006"/>
+  <system-out><![CDATA[{}
+{a}
+{a}
+{a,b}
+{b}
+{b}
+{}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

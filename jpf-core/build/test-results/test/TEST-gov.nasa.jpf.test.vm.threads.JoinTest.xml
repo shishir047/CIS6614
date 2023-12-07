@@ -1,0 +1,3114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.threads.JoinTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:16" hostname="SHISHIRHP" time="4.361">
+  <properties/>
+  <testcase name="testSimpleJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.436"/>
+  <testcase name="testRedundantJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.1"/>
+  <testcase name="testJoinHoldingLock" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.108"/>
+  <testcase name="testJoinAfterNotify" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.095"/>
+  <testcase name="testJoinThreadSet" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.108"/>
+  <testcase name="testNegativeTimeoutJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.084"/>
+  <testcase name="testNoRunnableSimpleJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.078"/>
+  <testcase name="testNestedLocksJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.066"/>
+  <testcase name="testNotAliveJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.085"/>
+  <testcase name="testJoinLoop" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.056"/>
+  <testcase name="testInterruptedJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.067"/>
+  <testcase name="testInterruptThreadWaitingToJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.053"/>
+  <testcase name="testBlockedJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.062"/>
+  <testcase name="testMultipleJoins" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.054"/>
+  <testcase name="testZeroTimeoutJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.047"/>
+  <testcase name="testJoinBeforeStart" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.066"/>
+  <testcase name="testTimeoutJoin" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.046"/>
+  <testcase name="testJoinNotifyDeadlock" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.042"/>
+  <testcase name="testRecursiveJoinThreadGroup" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="2.665"/>
+  <testcase name="testPreJoinInterrupt" classname="gov.nasa.jpf.test.vm.threads.JoinTest" time="0.039"/>
+  <system-out><![CDATA[  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: main termination
+main joining..
+thread-0 notifying
+thread-0 terminating
+main joined
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: main termination
+thread-0 notifying
+thread-0 terminating
+main joining..
+main joined
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: main termination
+main waiting on t2
+t2 notifying
+t2 waiting
+main waiting on t1
+t1 notifying
+t1 waiting
+main notifying t1
+main joining t1
+t1 terminating
+main notifying t2
+main joining t2
+t2 terminating
+main terminating
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:0,name:main,status:WAITING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:WAITING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  waiting on: java.lang.Thread@b8
+  call stack:
+	at java.lang.Thread.join(Thread.java)
+	at gov.nasa.jpf.test.vm.threads.JoinTest.testJoinLoop(JoinTest.java:212)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty "deadlock encountered:    thread java.lang.Thread:{..."
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +vm.storage.class=null
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+main started thread-0
+thread-0 done
+main returned from join
+main started thread-0
+thread-0 done
+main returned from join
+main started thread-0
+thread-0 done
+main returned from join
+main started thread-0
+thread-0 done
+main returned from join
+thread-0 done
+main started thread-0
+main returned from join
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NotDeadlockedProperty
+deadlock encountered:
+  thread java.lang.Thread:{id:0,name:main,status:WAITING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  thread gov.nasa.jpf.test.vm.threads.JoinTest$10:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:WAITING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  waiting on: gov.nasa.jpf.test.vm.threads.JoinTest$10@222
+  call stack:
+	at java.lang.Thread.join(Thread.java)
+	at gov.nasa.jpf.test.vm.threads.JoinTest.testJoinNotifyDeadlock(JoinTest.java:316)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+thread gov.nasa.jpf.test.vm.threads.JoinTest$10:{id:1,name:Thread-1,status:WAITING,priority:5,isDaemon:false,lockCount:1,suspendCount:0}
+  waiting on: gov.nasa.jpf.test.vm.threads.JoinTest$10@222
+  call stack:
+	at java.lang.Object.wait(Object.java)
+	at gov.nasa.jpf.test.vm.threads.JoinTest$10.run(JoinTest.java:305)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NotDeadlockedProperty "deadlock encountered:    thread java.lang.Thread:{..."
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 1 active threads
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+t2 run
+t11 run
+..main now joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+t2 run
+t11 run
+..main now joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t1 run
+t11 run
+..main now joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+..main now joining 2 active threads
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+..main now joining 2 active threads
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+t2 run
+..main now joining 1 active threads
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+t2 run
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t1 run
+t11 run
+..main now joining 1 active threads
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+..main now joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+..main now joining 2 active threads
+main joining: t1
+t1 run
+t11 run
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t1 run
+t11 run
+..main now joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t11 run
+..main now joining 1 active threads
+main joining: t1
+t1 run
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t11 run
+t1 run
+..main now joining 1 active threads
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+..main now joining 1 active threads
+main joining: t1
+t1 run
+main joined: t1
+t11 run
+..main now joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+..main now joining 1 active threads
+main joining: t1
+t1 run
+main joined: t1
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t1 run
+t11 run
+..main now joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+main joined: t
+t2 run
+t1 run
+t11 run
+..main now joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t run
+t1 run
+t2 run
+t11 run
+main joined: t
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+t11 run
+t2 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t run
+main joined: t
+..main now joining 3 active threads
+main joining: t1
+t11 run
+t2 run
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t run
+main joined: t
+t11 run
+t2 run
+..main now joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+..main now joining 2 active threads
+main joining: t11
+t2 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+t2 run
+..main now joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 1 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+t2 run
+..main now joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t
+main joined: t
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t
+main joined: t
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t
+main joined: t
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t
+main joined: t
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+t2 run
+..main now joining 1 active threads
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+t2 run
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+t11 run
+..main now joining 1 active threads
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t2 run
+t1 run
+main joined: t1
+t11 run
+..main now joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t2 run
+t1 run
+main joined: t1
+t11 run
+..main now joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t run
+t1 run
+t2 run
+t11 run
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+main joining: t1
+main joined: t1
+t2 run
+..main now joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 2 active threads
+main joining: t
+t1 run
+t11 run
+t run
+main joined: t
+main joining: t1
+main joined: t1
+t2 run
+..main now joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 1 active threads
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+main joining 3 active threads
+main joining: t
+t run
+t1 run
+t2 run
+t11 run
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 2 active threads
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+main joining 2 active threads
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+main joining 2 active threads
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+main joining 1 active threads
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+main joining 1 active threads
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 2 active threads
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 2 active threads
+main joining: t1
+t1 run
+t11 run
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t11 run
+main joining 1 active threads
+main joining: t1
+t1 run
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t11 run
+t1 run
+main joining 1 active threads
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t11 run
+t1 run
+main joining 1 active threads
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t11 run
+t1 run
+main joining 1 active threads
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t11 run
+t1 run
+main joining 1 active threads
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 1 active threads
+main joining: t1
+t1 run
+main joined: t1
+t11 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+t1 run
+t2 run
+t11 run
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+t2 run
+main joined: t2
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+t2 run
+t11 run
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+main joining 3 active threads
+main joining: t
+t2 run
+t11 run
+main joined: t
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+main joining 2 active threads
+main joining: t
+t11 run
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+main joining 2 active threads
+main joining: t
+t2 run
+main joined: t
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t11 run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+t11 run
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+main joining 3 active threads
+main joining: t
+t1 run
+t11 run
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t2 run
+t1 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 1 active threads
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+t2 run
+..main now joining 1 active threads
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+t2 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t11
+t11 run
+main joined: t11
+..main now joining 1 active threads
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+main joining 2 active threads
+main joining: t
+t run
+main joined: t
+main joining: t11
+t11 run
+main joined: t11
+t2 run
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t2
+main joined: t2
+..main now joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t2 run
+t11 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+t1 run
+t2 run
+t11 run
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+main joining 4 active threads
+main joining: t
+t1 run
+t2 run
+t11 run
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 4 active threads
+main joining: t
+main joined: t
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t11
+t11 run
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+main joining 3 active threads
+main joining: t
+t run
+main joined: t
+main joining: t11
+t11 run
+t2 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+main joining 3 active threads
+main joining: t
+t run
+t11 run
+t2 run
+main joined: t
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 2 active threads
+main joining: t
+main joined: t
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+t11 run
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+t11 run
+t2 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+main joining 3 active threads
+main joining: t1
+t11 run
+t2 run
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t run
+t11 run
+t2 run
+main joining 3 active threads
+main joining: t1
+main joined: t1
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+main joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+t2 run
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+main joining 2 active threads
+main joining: t11
+t2 run
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 2 active threads
+main joining: t11
+main joined: t11
+main joining: t2
+main joined: t2
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t1 run
+t11 run
+t run
+t2 run
+main joining 1 active threads
+main joining: t11
+main joined: t11
+..main now joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+~~~~~~~~~~~~~~~~~~~~~~~ begin program output at: end
+t run
+t1 run
+t2 run
+t11 run
+main joining 0 active threads
+main done
+~~~~~~~~~~~~~~~~~~~~~~~ end path output
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +vm.tree_output=false +vm.path_output=true
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.JoinTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

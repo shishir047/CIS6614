@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.event.EventTreeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:44" hostname="SHISHIRHP" time="0.022">
+  <properties/>
+  <testcase name="testSimpleTree" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.008"/>
+  <testcase name="testAddPath" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.002"/>
+  <testcase name="testMerge" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.005"/>
+  <testcase name="testCombinationTree" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.001"/>
+  <testcase name="testMaxDepth" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.004"/>
+  <testcase name="testPermutationTree" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.001"/>
+  <testcase name="testRemove" classname="gov.nasa.jpf.util.event.EventTreeTest" time="0.001"/>
+  <system-out><![CDATA[event tree: 
+a
+. 1
+. . b
+. x
+. . x
+. . . b
+checking path: "a1b"   OK
+checking path: "axxb"   OK
+event tree: 
+a
+. b
+. . c
+. . 3
+checking path: "abc"   OK
+checking path: "ab3"   OK
+event tree: 
+1
+. 2
+. . 3
+. . . a
+. . . . b
+. . . . . c
+. . a
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. a
+. . 2
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . b
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+a
+. 1
+. . 2
+. . . 3
+. . . . b
+. . . . . c
+. . . b
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . b
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+. b
+. . 1
+. . . 2
+. . . . 3
+. . . . . c
+. . . . c
+. . . . . 3
+. . . c
+. . . . 2
+. . . . . 3
+. . c
+. . . 1
+. . . . 2
+. . . . . 3
+checking path: "123abc"   OK
+checking path: "12a3bc"   OK
+checking path: "12ab3c"   OK
+checking path: "12abc3"   OK
+checking path: "1a23bc"   OK
+checking path: "1a2b3c"   OK
+checking path: "1a2bc3"   OK
+checking path: "1ab23c"   OK
+checking path: "1ab2c3"   OK
+checking path: "1abc23"   OK
+checking path: "a123bc"   OK
+checking path: "a12b3c"   OK
+checking path: "a12bc3"   OK
+checking path: "a1b23c"   OK
+checking path: "a1b2c3"   OK
+checking path: "a1bc23"   OK
+checking path: "ab123c"   OK
+checking path: "ab12c3"   OK
+checking path: "ab1c23"   OK
+checking path: "abc123"   OK
+event tree: 
+<NONE>
+a
+. b
+. . c
+. . . d
+. . . <NONE>
+. . <NONE>
+. . d
+. <NONE>
+. c
+. . d
+. . <NONE>
+. d
+b
+. c
+. . d
+. . <NONE>
+. <NONE>
+. d
+c
+. d
+. <NONE>
+d
+checking path: ""   OK
+checking path: "abcd"   OK
+checking path: "abc"   OK
+checking path: "ab"   OK
+checking path: "abd"   OK
+checking path: "a"   OK
+checking path: "acd"   OK
+checking path: "ac"   OK
+checking path: "ad"   OK
+checking path: "bcd"   OK
+checking path: "bc"   OK
+checking path: "b"   OK
+checking path: "bd"   OK
+checking path: "cd"   OK
+checking path: "c"   OK
+checking path: "d"   OK
+a
+. 1
+. . b
+. X
+. . Y
+. . . b
+. r
+. . r
+. . . r
+. . . . b
+a,1,b.
+a,X,Y,b.
+a,r,r,r,b.
+max depth: 5
+event tree: 
+a
+. b
+. . c
+a
+. c
+. . b
+b
+. a
+. . c
+b
+. c
+. . a
+c
+. a
+. . b
+c
+. b
+. . a
+checking path: "abc"   OK
+checking path: "acb"   OK
+checking path: "bac"   OK
+checking path: "bca"   OK
+checking path: "cab"   OK
+checking path: "cba"   OK
+merged tree: 
+1,2,a,b.
+1,a,2,b.
+1,a,b,2.
+a,1,2,b.
+a,1,b,2.
+a,b,1,2.
+reduced tree: 
+event tree: 
+a
+. b
+checking path: "ab"   OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.threads.SchedulesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:28" hostname="SHISHIRHP" time="0.451">
+  <properties/>
+  <testcase name="testSleep" classname="gov.nasa.jpf.test.mc.threads.SchedulesTest" time="0.451"/>
+  <system-out><![CDATA[  running jpf with args: +cg.threads.break_start=true +cg.threads.break_yield=true +cg.threads.break_sleep=true +listener=.listener.PathOutputMonitor +pom.all=test/gov/nasa/jpf/test/mc/threads/SchedulesTest-output
+[WARNING] pattern file not found: test/gov/nasa/jpf/test/mc/threads/SchedulesTest-output
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.SchedulesTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+main starting T
+main finished
+T started
+T sleeping
+T finished
+T started
+T sleeping
+main finished
+T finished
+T finished
+main finished
+
+====================================================== path outputs
+main starting T
+main finished
+T started
+T sleeping
+T finished
+~~~
+main starting T
+T started
+T sleeping
+main finished
+T finished
+~~~
+main starting T
+T started
+T sleeping
+T finished
+main finished
+~~~
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

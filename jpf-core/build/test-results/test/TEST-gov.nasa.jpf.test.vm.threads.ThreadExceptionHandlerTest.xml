@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:23" hostname="SHISHIRHP" time="1.388">
+  <properties/>
+  <testcase name="testChildHandler" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.613"/>
+  <testcase name="testHandlerThrowsExc" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.171"/>
+  <testcase name="checkDefaults" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.134"/>
+  <testcase name="testChildDefaultHandler" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.121"/>
+  <testcase name="testPrecedence1" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.083"/>
+  <testcase name="testPrecedence2" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.077"/>
+  <testcase name="testPrecedence3" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.094"/>
+  <testcase name="testChildHandlerAfterTermination" classname="gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest" time="0.094"/>
+  <system-out><![CDATA[  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.NullPointerException: test
+	at gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest$NPEHandlerExc.uncaughtException(gov/nasa/jpf/test/vm/threads/ThreadExceptionHandlerTest.java:89)
+	at gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest$TestRunnable.run(gov/nasa/jpf/test/vm/threads/ThreadExceptionHandlerTest.java:97)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:WAITING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  waiting on: java.lang.Thread@21d
+  call stack:
+	at java.lang.Thread.join(Thread.java)
+	at gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.testHandlerThrowsExc(ThreadExceptionHandlerTest.java:249)
+	at java.lang.reflect.Method.invoke(Method.java)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:648)
+
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest$NPEHandlerExc.uncaughtException(ThreadExceptionHandlerTest.java:89)
+	at gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest$TestRunnable.run(ThreadExceptionHandlerTest.java:97)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.NullPointerException: test  at gov.nasa...."
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args: +vm.ignore_uncaught_handler=false +vm.pass_uncaught_handler
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.ThreadExceptionHandlerTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

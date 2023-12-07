@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.BitSet64Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:34" hostname="SHISHIRHP" time="0.01">
+  <properties/>
+  <testcase name="testBasic" classname="gov.nasa.jpf.util.BitSet64Test" time="0.004"/>
+  <testcase name="testOutOfBounds" classname="gov.nasa.jpf.util.BitSet64Test" time="0.005"/>
+  <testcase name="testEnumeration" classname="gov.nasa.jpf.util.BitSet64Test" time="0.0"/>
+  <testcase name="testIntSetInterface" classname="gov.nasa.jpf.util.BitSet64Test" time="0.0"/>
+  <system-out><![CDATA[java.lang.IndexOutOfBoundsException: BitSet64 index out of range: 64
+java.lang.IndexOutOfBoundsException: BitSet64 index out of range: 256
+java.lang.IndexOutOfBoundsException: BitSet64 index out of range: -1
+0
+42
+63
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

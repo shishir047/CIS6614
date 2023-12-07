@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.reflection.ProxyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:04" hostname="SHISHIRHP" time="9.474">
+  <properties/>
+  <testcase name="testBasicProxy" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.59"/>
+  <testcase name="testGetInvocationHandler" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.224"/>
+  <testcase name="testProxyName" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.164"/>
+  <testcase name="testProxyCreationInCaseOfChoiceGenerator" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="8.299"/>
+  <testcase name="testProxyInvocation" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.006"/>
+  <testcase name="testIsProxyClass" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.088"/>
+  <testcase name="testAnnoProxy" classname="gov.nasa.jpf.test.vm.reflection.ProxyTest" time="0.103"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+proxy invoke of public abstract int gov.nasa.jpf.test.vm.reflection.ProxyTest$Ifc.foo(int)
+ with 1
+43
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.reflection.ProxyTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+proxy invoke of public abstract int gov.nasa.jpf.test.vm.reflection.ProxyTest$AnnoIfc.baz()
+42
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

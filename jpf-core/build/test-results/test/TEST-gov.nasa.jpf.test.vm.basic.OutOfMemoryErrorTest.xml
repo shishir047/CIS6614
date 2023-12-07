@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.basic.OutOfMemoryErrorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:54" hostname="SHISHIRHP" time="0.633">
+  <properties/>
+  <testcase name="outOfMemoryErrorFails" classname="gov.nasa.jpf.test.vm.basic.OutOfMemoryErrorTest" time="0.633"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.basic.OutOfMemoryErrorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[SEVERE] JPF out of memory
+
+====================================================== search constraint
+JPF out of memory
+
+====================================================== snapshot 
+initial program state
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoOutOfMemoryErrorProperty
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

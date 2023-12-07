@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.CommitOutputStreamTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:34" hostname="SHISHIRHP" time="0.025">
+  <properties/>
+  <testcase name="expandDouble" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.01"/>
+  <testcase name="expand" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.002"/>
+  <testcase name="expandTriple" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.001"/>
+  <testcase name="writeArray" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <testcase name="rollback" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.001"/>
+  <testcase name="writeLengthNegOne" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.002"/>
+  <testcase name="close" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <testcase name="flush" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <testcase name="constructorNullArg" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <testcase name="writeLengthZero" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <testcase name="writeBeyondEnd" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.008"/>
+  <testcase name="writeNullBuffer" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.001"/>
+  <testcase name="writeIndexNegOne" classname="gov.nasa.jpf.util.CommitOutputStreamTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

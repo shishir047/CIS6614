@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.SortedArrayObjectSetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:41" hostname="SHISHIRHP" time="0.005">
+  <properties/>
+  <testcase name="testBasic" classname="gov.nasa.jpf.util.SortedArrayObjectSetTest" time="0.005"/>
+  <system-out><![CDATA[{1}
+{1,20}
+{1,5,20}
+{1,5,7,20}
+{1,5,7,20}
+{1,5a,5,7,20}
+{1,5,7,20}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

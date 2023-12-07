@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.ArrayObjectQueueTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:32" hostname="SHISHIRHP" time="0.009">
+  <properties/>
+  <testcase name="testBasic" classname="gov.nasa.jpf.util.ArrayObjectQueueTest" time="0.004"/>
+  <testcase name="testProcessing" classname="gov.nasa.jpf.util.ArrayObjectQueueTest" time="0.003"/>
+  <testcase name="testTailChasing" classname="gov.nasa.jpf.util.ArrayObjectQueueTest" time="0.001"/>
+  <testcase name="testMidGrow" classname="gov.nasa.jpf.util.ArrayObjectQueueTest" time="0.001"/>
+  <system-out><![CDATA[{1}
+{1,2,3,4}
+{1,2,3,4,5}
+{2,3,4,5}
+{}
+processed: a
+processed: g
+processed: b
+processed: c
+processed: d
+processed: e
+processed: f
+{2,3,4,5}
+{4,5,6}
+{5,6,null,4}
+{6}
+{null,6,null,null}
+{5,2,3,4}
+{2,3,4,5,6}
+{2,3,4,5,6,null}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

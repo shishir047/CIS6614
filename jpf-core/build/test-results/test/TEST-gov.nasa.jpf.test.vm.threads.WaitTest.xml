@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.vm.threads.WaitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:29" hostname="SHISHIRHP" time="1.027">
+  <properties/>
+  <testcase name="testSimpleWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.45"/>
+  <testcase name="testNotifyAll" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.183"/>
+  <testcase name="testSyncRunWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.131"/>
+  <testcase name="testVerySimpleWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.059"/>
+  <testcase name="testInterruptedWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.064"/>
+  <testcase name="testLoopedWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.077"/>
+  <testcase name="testTimeoutWait" classname="gov.nasa.jpf.test.vm.threads.WaitTest" time="0.061"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testSimpleWait()
+waiting
+notifying
+notified
+notified
+waiting
+notifying
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testNotifyAll()
+waiter1 waiting
+waiter2 waiting
+main notifying all waiters..
+..done
+waiter1 notified
+waiter2 notified
+waiter2 notified
+waiter2 notified
+waiter2 notified
+waiter2 notified
+waiter1 notified
+waiter1 notified
+waiter1 notified
+waiter1 notified
+waiter1 notified
+waiter2 notified
+waiter2 notified
+waiter2 notified
+waiter2 notified
+waiter1 notified
+waiter1 notified
+main notifying all waiters..
+..done
+waiter2 waiting
+waiter2 waiting
+main notifying all waiters..
+..done
+waiter1 waiting
+waiter1 waiting
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testSyncRunWait()
+main notifying
+thread-0 running
+main notifying
+thread-0 running
+thread-0 running
+thread-0 running
+main notifying
+thread-0 notified
+thread-0 notified
+thread-0 running
+main notifying
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testVerySimpleWait()
+waiting
+timed out
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testInterruptedWait()
+waiting
+interrupting
+interrupted
+interrupted
+waiting
+interrupting
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testLoopedWait()
+waiting 
+notifying
+notified 
+waiting 
+notifying
+notified 
+notifying
+notifying
+notified 
+notified 
+notifying
+waiting 
+notifying
+waiting 
+notifying
+waiting 
+notified 
+notified 
+waiting 
+notifying
+waiting 
+notifying
+waiting 
+notifying
+notifying
+waiting 
+notifying
+waiting 
+notifying
+waiting 
+notifying
+notifying
+notifying
+waiting 
+waiting 
+notifying
+notifying
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.vm.threads.WaitTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:37 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+running testTimeoutWait()
+waiting
+wait timed out
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:37 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

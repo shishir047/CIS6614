@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.vm.SystemStateTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:48" hostname="SHISHIRHP" time="0.023">
+  <properties/>
+  <testcase name="testCascadedCGadvance" classname="gov.nasa.jpf.vm.SystemStateTest" time="0.022"/>
+  <testcase name="testCascadedCGops" classname="gov.nasa.jpf.vm.SystemStateTest" time="0.001"/>
+  <system-out><![CDATA[notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{>false,true}]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,>1,2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+--
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+--
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+--
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+--
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{false,>true}]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,>1,2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+--
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+--
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+--
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+--
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{false,>true}]
+--- testing advanceCurCg()
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{>false,true}]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,>1,2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+--- testing advanceCascadedParent()
+gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{>false,true}]
+gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,42.1,>42.2]
+notifyChoiceGeneratorProcessed: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,1,>2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.BooleanChoiceGenerator[[id="cg1",isCascaded:true,{false,>true}]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.IntChoiceFromSet[id="cg2",isCascaded:true,>1,2]
+notifyChoiceGeneratorAdvanced: gov.nasa.jpf.vm.choice.DoubleChoiceFromList[id="cg3",isCascaded:false,>42.1,42.2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

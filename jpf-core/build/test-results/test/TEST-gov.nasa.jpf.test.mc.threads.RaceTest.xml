@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.threads.RaceTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:25" hostname="SHISHIRHP" time="1.997">
+  <properties/>
+  <testcase name="testStaticRaceNoThrow" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.458"/>
+  <testcase name="testSameObjectOtherField" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.106"/>
+  <testcase name="testInstanceArrayFieldNoRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.143"/>
+  <testcase name="testBothSync" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.124"/>
+  <testcase name="testInstanceRaceNoThrow" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.075"/>
+  <testcase name="testTSync" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.059"/>
+  <testcase name="testStaticRaceListenerIncludeOther" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.066"/>
+  <testcase name="testNoArrayRaceSameInsn" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.116"/>
+  <testcase name="testStaticRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.071"/>
+  <testcase name="testStaticArrayFieldRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.062"/>
+  <testcase name="testSameInsnOtherObject" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.05"/>
+  <testcase name="testWrongSync" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.062"/>
+  <testcase name="testInstanceRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.057"/>
+  <testcase name="testInstanceRaceListenerInclude" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.06"/>
+  <testcase name="testArrayRaceSameInsn" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.05"/>
+  <testcase name="testMainSync" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.062"/>
+  <testcase name="testStaticArrayFieldNoRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.051"/>
+  <testcase name="testArrayRaceNoThrow" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.043"/>
+  <testcase name="testInstanceArrayFieldRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.048"/>
+  <testcase name="testNoArrayRaceElements" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.052"/>
+  <testcase name="testInstanceRaceListenerExclude" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.055"/>
+  <testcase name="testNoSync" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.05"/>
+  <testcase name="testSymmetricStaticRace" classname="gov.nasa.jpf.test.mc.threads.RaceTest" time="0.074"/>
+  <system-out><![CDATA[  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for field gov.nasa.jpf.test.mc.threads.RaceTest.staticField
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest$3.run(RaceTest.java:86)
+"  WRITE: putstatic gov.nasa.jpf.test.mc.threads.RaceTest.staticField
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest$4.run(RaceTest.java:94)
+"  WRITE: putstatic gov.nasa.jpf.test.mc.threads.RaceTest.staticField
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$3.run(RaceTest.java:87)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$4.run(RaceTest.java:94)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for field gov.nasa.jpf.test.mc.threads.RaceTe..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for field gov.nasa.jpf.test.mc.threads.SharedObject@226.instanceField
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest$7.run(RaceTest.java:194)
+"  WRITE: putfield gov.nasa.jpf.test.mc.threads.SharedObject.instanceField
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest$8.run(RaceTest.java:204)
+"  WRITE: putfield gov.nasa.jpf.test.mc.threads.SharedObject.instanceField
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$7.run(RaceTest.java:195)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$8.run(RaceTest.java:204)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for field gov.nasa.jpf.test.mc.threads.Shared..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: testT1Sync race
+	at gov.nasa.jpf.test.mc.threads.RaceTest$23.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:520)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$23.run(RaceTest.java:522)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: testT1Sync race  at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +race.include=sho.bi.Doo*
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +cg.threads.break_arrays
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: r1 detected race!
+	at gov.nasa.jpf.test.mc.threads.RaceTest$1.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:55)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$1.run(RaceTest.java:55)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$2.run(RaceTest.java:65)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: r1 detected race!  at ..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for array element [I@206[0]
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+"  WRITE: iastore
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+"  WRITE: iastore
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.mc.threads.RaceTest$15:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:269)
+	at gov.nasa.jpf.test.mc.threads.RaceTest$15.run(RaceTest.java:322)
+
+thread gov.nasa.jpf.test.mc.threads.RaceTest$16:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+	at gov.nasa.jpf.test.mc.threads.RaceTest$16.run(RaceTest.java:328)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for array element [I@206[0]    Thread-1 at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: testWrongSync race
+	at gov.nasa.jpf.test.mc.threads.RaceTest$26.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:596)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$26.run(RaceTest.java:598)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: testWrongSync race  at..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: r1 detected race!
+	at gov.nasa.jpf.test.mc.threads.RaceTest$5.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:157)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$5.run(RaceTest.java:157)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$6.run(RaceTest.java:169)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: r1 detected race!  at ..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +race.include=gov.nasa.jpf.test.mc.threads.RaceTest*
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for field gov.nasa.jpf.test.mc.threads.SharedObject@245.instanceField
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest$7.run(RaceTest.java:194)
+"  WRITE: putfield gov.nasa.jpf.test.mc.threads.SharedObject.instanceField
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest$8.run(RaceTest.java:204)
+"  WRITE: putfield gov.nasa.jpf.test.mc.threads.SharedObject.instanceField
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$7.run(RaceTest.java:195)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$8.run(RaceTest.java:204)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for field gov.nasa.jpf.test.mc.threads.Shared..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +cg.threads.break_arrays
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for array element [I@225[1]
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest$AT.run(RaceTest.java:374)
+"  WRITE: iastore
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest$AT.run(RaceTest.java:374)
+"  WRITE: iastore
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.mc.threads.RaceTest$AT:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$AT.run(RaceTest.java:375)
+
+thread gov.nasa.jpf.test.mc.threads.RaceTest$AT:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$AT.run(RaceTest.java:374)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for array element [I@225[1]    Thread-1 at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: testMainSync race
+	at gov.nasa.jpf.test.mc.threads.RaceTest$24.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:545)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$24.run(RaceTest.java:545)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: testMainSync race  at ..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +cg.threads.break_arrays
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for array element [I@225[0]
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest$9.run(RaceTest.java:247)
+"  WRITE: iastore
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest$10.run(RaceTest.java:255)
+"  WRITE: iastore
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$9.run(RaceTest.java:248)
+
+thread java.lang.Thread:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$10.run(RaceTest.java:255)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for array element [I@225[0]    Thread-1 at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.listener.PreciseRaceDetector
+race for array element [I@227[0]
+  Thread-1 at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+"  WRITE: iastore
+  Thread-2 at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+"  WRITE: iastore
+
+
+====================================================== snapshot #1
+thread gov.nasa.jpf.test.mc.threads.RaceTest$11:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:269)
+	at gov.nasa.jpf.test.mc.threads.RaceTest$11.run(RaceTest.java:278)
+
+thread gov.nasa.jpf.test.mc.threads.RaceTest$12:{id:2,name:Thread-2,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest.writeFirstElem(RaceTest.java:268)
+	at gov.nasa.jpf.test.mc.threads.RaceTest$12.run(RaceTest.java:284)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.listener.PreciseRaceDetector "race for array element [I@227[0]    Thread-1 at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +cg.threads.break_arrays
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=gov.nasa.jpf.listener.PreciseRaceDetector +race.exclude=gov.nasa.jpf.test.mc.threads.RaceTest*
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: testNoSync race
+	at gov.nasa.jpf.test.mc.threads.RaceTest$22.run(gov/nasa/jpf/test/mc/threads/RaceTest.java:496)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.test.mc.threads.RaceTest$22.run(RaceTest.java:496)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: testNoSync race  at go..."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +vm.scheduler.sharedness.class=.vm.GlobalSharednessPolicy
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.threads.RaceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+Container.data = 1 => throwing RuntimeException
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.RuntimeException: got race
+	at gov.nasa.jpf.test.mc.threads.RaceTest.testSymmetricStaticRace(gov/nasa/jpf/test/mc/threads/RaceTest.java:139)
+	at java.lang.reflect.Method.invoke(gov.nasa.jpf.vm.JPF_java_lang_reflect_Method)
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(gov/nasa/jpf/util/test/TestJPF.java:648)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at gov.nasa.jpf.util.test.TestJPF.runTestMethod(TestJPF.java:650)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: got race  at gov.nasa...."
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

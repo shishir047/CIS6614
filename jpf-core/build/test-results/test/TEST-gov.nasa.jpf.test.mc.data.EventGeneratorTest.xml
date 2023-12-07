@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.EventGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:00" hostname="SHISHIRHP" time="0.715">
+  <properties/>
+  <testcase name="testSimpleTree" classname="gov.nasa.jpf.test.mc.data.EventGeneratorTest" time="0.493"/>
+  <testcase name="testAnyCombination" classname="gov.nasa.jpf.test.mc.data.EventGeneratorTest" time="0.105"/>
+  <testcase name="testEventExpansion" classname="gov.nasa.jpf.test.mc.data.EventGeneratorTest" time="0.117"/>
+  <system-out><![CDATA[  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$SimpleTree +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[a],cur:null}
+[INFO] processing event: a
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[1,x],cur:null}
+[INFO] processing event: 1
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+got trace: a1b
+[INFO] processing event: x
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[x],cur:null}
+[INFO] processing event: x
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+got trace: axxb
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$CombinationTree +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+<NONE>
+A
+. B
+. . C
+. . <NONE>
+. <NONE>
+. C
+B
+. C
+. <NONE>
+C
+.
+A,B,C.
+A,B.
+A.
+A,C.
+B,C.
+B.
+C.
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[<NONE>,A,B,C],cur:null}
+[INFO] no more events
+[INFO] processing event: A
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[B,<NONE>,C],cur:null}
+[INFO] processing event: B
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[C,<NONE>],cur:null}
+[INFO] processing event: C
+[INFO] no more events
+[INFO] no more events
+[INFO] no more events
+[INFO] processing event: C
+[INFO] no more events
+[INFO] processing event: B
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[C,<NONE>],cur:null}
+[INFO] processing event: C
+[INFO] no more events
+[INFO] no more events
+[INFO] processing event: C
+[INFO] no more events
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +event.tree.class=.test.mc.data.EventGeneratorTest$ExpandTree +event.context.class=.test.mc.data.EventGeneratorTest$MyEventContext +log.info=event
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.EventGeneratorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+a
+. *
+. . <opt>
+. . . b
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[a],cur:null}
+[INFO] processing event: a
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[*],cur:null}
+  expanding * to [X,Y]
+[INFO] processing event: X
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[<opt>],cur:null}
+  skipping <opt>
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+--- got trace: aXb
+[INFO] processing event: Y
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[<opt>],cur:null}
+  skipping <opt>
+[INFO] next event generator: gov.nasa.jpf.util.event.EventChoiceGenerator{id:"processNextEvent",[b],cur:null}
+[INFO] processing event: b
+[INFO] no more events
+--- got trace: aYb
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

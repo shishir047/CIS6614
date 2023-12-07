@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.SortedArrayIntSetTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:40" hostname="SHISHIRHP" time="0.013">
+  <properties/>
+  <testcase name="testComparison" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.011"/>
+  <testcase name="testRemoveFirst" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.0"/>
+  <testcase name="testRemoveLast" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.0"/>
+  <testcase name="testInsert" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.0"/>
+  <testcase name="testRemove" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.0"/>
+  <testcase name="testIterator" classname="gov.nasa.jpf.util.SortedArrayIntSetTest" time="0.001"/>
+  <system-out><![CDATA[comparing {0,41,42} with {0,41,42}
+comparing {0,41,42} with {0,41,42}
+comparing {0,41,42} with {0,41,42}
+comparing {0,41,42} with {0,41,42}
+comparing {0,41,42} with {0,41,42}
+{0,41,42,43}
+123
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

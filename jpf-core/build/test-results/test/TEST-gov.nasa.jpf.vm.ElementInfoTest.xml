@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.vm.ElementInfoTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:47" hostname="SHISHIRHP" time="0.025">
+  <properties/>
+  <testcase name="testALiveFlag" classname="gov.nasa.jpf.vm.ElementInfoTest" time="0.01"/>
+  <testcase name="testMarkedFlag" classname="gov.nasa.jpf.vm.ElementInfoTest" time="0.001"/>
+  <testcase name="testPinDownCounter" classname="gov.nasa.jpf.vm.ElementInfoTest" time="0.014"/>
+  <testcase name="testMarkedOrAlive" classname="gov.nasa.jpf.vm.ElementInfoTest" time="0.0"/>
+  <system-out><![CDATA[caught gov.nasa.jpf.JPFException: pinDown limit exceeded: ElementInfo@0, getPinDownCount() = 255
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

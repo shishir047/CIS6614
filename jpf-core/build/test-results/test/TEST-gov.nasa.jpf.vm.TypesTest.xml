@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.vm.TypesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:49" hostname="SHISHIRHP" time="0.019">
+  <properties/>
+  <testcase name="testGetSignatureName" classname="gov.nasa.jpf.vm.TypesTest" time="0.019"/>
+  <system-out><![CDATA[int foo(int,java.lang.String) => foo(ILjava/lang/String;)I
+double[] what_ever (char[], X ) => what_ever([CLX;)[D
+bar() => bar()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.vm.choice.IntChoiceFromListTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:49" hostname="SHISHIRHP" time="0.012">
+  <properties/>
+  <testcase name="testListWithOutDuplicates" classname="gov.nasa.jpf.vm.choice.IntChoiceFromListTest" time="0.012"/>
+  <testcase name="testListWithDuplicates2" classname="gov.nasa.jpf.vm.choice.IntChoiceFromListTest" time="0.0"/>
+  <testcase name="testListWithDuplicates" classname="gov.nasa.jpf.vm.choice.IntChoiceFromListTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

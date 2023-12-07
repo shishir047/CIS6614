@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.DataChoiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:35:57" hostname="SHISHIRHP" time="0.691">
+  <properties/>
+  <testcase name="testIntFromArray" classname="gov.nasa.jpf.test.mc.data.DataChoiceTest" time="0.426"/>
+  <testcase name="testDoubleFromArray" classname="gov.nasa.jpf.test.mc.data.DataChoiceTest" time="0.084"/>
+  <testcase name="testIntFromSet" classname="gov.nasa.jpf.test.mc.data.DataChoiceTest" time="0.099"/>
+  <testcase name="testDoubleFromSet" classname="gov.nasa.jpf.test.mc.data.DataChoiceTest" time="0.082"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.DataChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+1
+2
+3
+4
+5
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.DataChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+-42.0
+0.0
+42.0
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +my_int_from_set.class=gov.nasa.jpf.vm.choice.IntChoiceFromSet +my_int_from_set.values=1,2,3,intField,localVar
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.DataChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+1
+2
+3
+42
+43
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+  running jpf with args: +my_double_from_set.class=gov.nasa.jpf.vm.choice.DoubleChoiceFromSet +my_double_from_set.values=42.0,43.5,doubleField,localVar
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.DataChoiceTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:35 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+42.0
+43.5
+-42.0
+4200.0
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:35 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

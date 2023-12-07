@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:32" hostname="SHISHIRHP" time="0.034">
+  <properties/>
+  <testcase name="availableStuck" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.01"/>
+  <testcase name="readAfterClose" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.001"/>
+  <testcase name="readBufferSplit" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="readBufferAfterClose" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.001"/>
+  <testcase name="fillWithNoMoreData" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="passNullPointerToConstructor" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.001"/>
+  <testcase name="unreadExtra" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="testToString" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.001"/>
+  <testcase name="fillWithTooMuchData" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.007"/>
+  <testcase name="unreadMinus1" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="readBufferLeftOver" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="readBufferEmptyBuffer" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.001"/>
+  <testcase name="readBufferPartialNoBlock" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.0"/>
+  <testcase name="unreadOverflow" classname="gov.nasa.jpf.util.AvailableBufferedInputStreamTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

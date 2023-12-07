@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.MethodSpecTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:37" hostname="SHISHIRHP" time="0.023">
+  <properties/>
+  <testcase name="testConstruction" classname="gov.nasa.jpf.util.MethodSpecTest" time="0.023"/>
+  <system-out><![CDATA[x.y.Foo.bar(java.lang.String,^float[]) => MethodSpec {matchInverted:false,clsSpec:"x\.y\.Foo",nameSpec:"bar",sigSpec:"(Ljava/lang/String;[F)",marked:{1}}
+x.y.Foo+.* => MethodSpec {matchInverted:false,clsSpec:"x\.y\.Foo",nameSpec:".*"}
+*.foo(^int, ^double) => MethodSpec {matchInverted:false,clsSpec:".*",nameSpec:"foo",sigSpec:"(ID)",marked:{0, 1}}
+( ^int, ^double) => MethodSpec {matchInverted:false,clsSpec:".*",nameSpec:".*",sigSpec:"(ID)",marked:{0, 1}}
+.foo => MethodSpec {matchInverted:false,clsSpec:".*",nameSpec:"foo"}
+.(int) => MethodSpec {matchInverted:false,clsSpec:".*",nameSpec:".*",sigSpec:"(I)"}
+MethodSpec {matchInverted:true,clsSpec:"java\..*",nameSpec:".*"}
+MethodSpec {matchInverted:false,clsSpec:"java",nameSpec:".*"}
+*.foo(^int, ^double => null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

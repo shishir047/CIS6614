@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.json.JSONLexerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:44" hostname="SHISHIRHP" time="0.012">
+  <properties/>
+  <testcase name="testKeyIdObjectWithEscapes" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.011"/>
+  <testcase name="testArrayTokens" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.0"/>
+  <testcase name="testEmptyObject" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.0"/>
+  <testcase name="testCGCallTokens" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.001"/>
+  <testcase name="testKeyIdObject" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.0"/>
+  <testcase name="testKeyIdObjectWithNumbers" classname="gov.nasa.jpf.util.json.JSONLexerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

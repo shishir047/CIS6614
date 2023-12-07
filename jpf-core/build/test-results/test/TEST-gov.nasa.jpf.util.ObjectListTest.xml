@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.ObjectListTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:39" hostname="SHISHIRHP" time="0.014">
+  <properties/>
+  <testcase name="testSingleValueIteration" classname="gov.nasa.jpf.util.ObjectListTest" time="0.007"/>
+  <testcase name="testAdd" classname="gov.nasa.jpf.util.ObjectListTest" time="0.0"/>
+  <testcase name="testClone" classname="gov.nasa.jpf.util.ObjectListTest" time="0.004"/>
+  <testcase name="testHash" classname="gov.nasa.jpf.util.ObjectListTest" time="0.001"/>
+  <testcase name="testListIteration" classname="gov.nasa.jpf.util.ObjectListTest" time="0.001"/>
+  <testcase name="testReplace" classname="gov.nasa.jpf.util.ObjectListTest" time="0.0"/>
+  <testcase name="testEquals" classname="gov.nasa.jpf.util.ObjectListTest" time="0.0"/>
+  <testcase name="testRemove" classname="gov.nasa.jpf.util.ObjectListTest" time="0.0"/>
+  <system-out><![CDATA[-- untyped iterator
+[0] = one
+-- typed iterator (all Strings)
+[0] = one
+-- typed iterator (all Floats) => none
+[0] = 2
+[1] = one
+4
+2
+-- untyped iterator
+[0] = 4
+[1] = three
+[2] = 2
+[3] = one
+-- typed iterator (all Strings)
+[0] = three
+[1] = one
+-- typed iterator (all Floats) => none
+[0] = 2
+[1] = 1
+[0] = three
+[1] = one
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.BitSet256Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:33" hostname="SHISHIRHP" time="0.008">
+  <properties/>
+  <testcase name="testBasic" classname="gov.nasa.jpf.util.BitSet256Test" time="0.004"/>
+  <testcase name="testOutOfBounds" classname="gov.nasa.jpf.util.BitSet256Test" time="0.004"/>
+  <testcase name="testEnumeration" classname="gov.nasa.jpf.util.BitSet256Test" time="0.0"/>
+  <system-out><![CDATA[java.lang.IndexOutOfBoundsException: BitSet256 index out of range: 2264
+java.lang.IndexOutOfBoundsException: BitSet256 index out of range: 256
+java.lang.IndexOutOfBoundsException: BitSet256 index out of range: -1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

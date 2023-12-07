@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.PerturbatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:06" hostname="SHISHIRHP" time="0.771">
+  <properties/>
+  <testcase name="testIntReturnPerturbation" classname="gov.nasa.jpf.test.mc.data.PerturbatorTest" time="0.421"/>
+  <testcase name="testFieldPerturbationLocation" classname="gov.nasa.jpf.test.mc.data.PerturbatorTest" time="0.096"/>
+  <testcase name="testParamPerturbation" classname="gov.nasa.jpf.test.mc.data.PerturbatorTest" time="0.175"/>
+  <testcase name="testIntFieldPerturbation" classname="gov.nasa.jpf.test.mc.data.PerturbatorTest" time="0.079"/>
+  <system-out><![CDATA[  running jpf with args: +listener=.listener.Perturbator +perturb.returns=foo,bar +perturb.foo.class=.perturb.IntOverUnder +perturb.foo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.foo(int) +perturb.foo.location=PerturbatorTest.java:136 +perturb.foo.delta=1 +perturb.bar.class=.perturb.IntOverUnder +perturb.bar.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.bar(int,boolean) +perturb.bar.delta=5
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+int return perturbation test
+foo() = -1
+foo() = 43
+foo() = 42
+foo() = 41
+bar() = 44
+bar() = 39
+bar() = 34
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.fields=data +perturb.data.class=.perturb.IntOverUnder +perturb.data.field=gov.nasa.jpf.test.mc.data.PerturbatorTest.data +perturb.data.location=PerturbatorTest.java:87 +perturb.data.delta=1
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+instance field location perturbation test
+x = 42
+d = 43
+d = 42
+d = 41
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.params=foo,zoo +perturb.foo.class=.perturb.GenericDataAbstractor +perturb.foo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.foobar(long,double) +perturb.foo.location=PerturbatorTest.java:233 +perturb.zoo.class=.perturb.GenericDataAbstractor +perturb.zoo.method=gov.nasa.jpf.test.mc.data.PerturbatorTest.zoo(int,boolean)
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+parameters perturbation test
+(21, false)
+zoo = 21
+(21, true)
+zoo = -21
+(0, false)
+zoo = 0
+(0, true)
+zoo = 0
+(-84, false)
+zoo = -84
+(-84, true)
+zoo = 84
+(42, 0.0)
+foobar = 2.0
+(32, -1.414)
+foobar = 0.5860000000000001
+(32, 0.0)
+foobar = 2.0
+(32, 3.141)
+foobar = 5.141
+(0, -1.414)
+foobar = -1.414
+(0, 0.0)
+foobar = 0.0
+(0, 3.141)
+foobar = 3.141
+(-60, -1.414)
+foobar = -1.414
+(-60, 0.0)
+foobar = 0.0
+(-60, 3.141)
+foobar = 3.141
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args: +listener=.listener.Perturbator +perturb.fields=data +perturb.data.class=.perturb.IntOverUnder +perturb.data.field=gov.nasa.jpf.test.mc.data.PerturbatorTest.data +perturb.data.delta=1
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.PerturbatorTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+instance field perturbation test
+d = 43
+d = 42
+d = 41
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.test.mc.data.JSONTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:36:01" hostname="SHISHIRHP" time="1.777">
+  <properties/>
+  <testcase name="testSetByteShortIntFromCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.439"/>
+  <testcase name="testBoxedTypesArrayFilling" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.092"/>
+  <testcase name="testFillPrivimitivesFromJSON" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.137"/>
+  <testcase name="testFillFromJSONInheritance" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.085"/>
+  <testcase name="testFillFromJSONSingleClass" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.069"/>
+  <testcase name="testBoxedDoubleFromCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.065"/>
+  <testcase name="testFillWithIntevalCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.066"/>
+  <testcase name="testObjectFromCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.09"/>
+  <testcase name="testFillInnerClassCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.072"/>
+  <testcase name="testFillPrimitiveArrays" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.108"/>
+  <testcase name="testFillingObjectInArrayWithCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.086"/>
+  <testcase name="testArrayOfObjectsFilling" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.073"/>
+  <testcase name="testFillIntArrayFromJSON" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.055"/>
+  <testcase name="testFillingMultArrayOfObjects" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.062"/>
+  <testcase name="testSetBoolFromCG" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.048"/>
+  <testcase name="testInnerClassFilling" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.062"/>
+  <testcase name="testFillStringValue" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.051"/>
+  <testcase name="testFillBoxedPrimitivesFromJSON" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.041"/>
+  <testcase name="testFillingWhenInnerClassIsNull" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.033"/>
+  <testcase name="testMultiArrayFilling" classname="gov.nasa.jpf.test.mc.data.JSONTest" time="0.037"/>
+  <system-out><![CDATA[  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxIntsArr.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$Primitives.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$MyClass.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$MySup.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$MySup.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedDouble.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedDouble.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedDouble.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ByteShortIntLong.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedInteger.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedInteger.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$BoxedInteger.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$O.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$O.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$O.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$PrimitiveArrays.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$I.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ArrI.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$IntArr.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$MultObjectsArr.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$Bool.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$Bool.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$InnerClass.this$0 isn't specified
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$OuterClass.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$ClassWithString.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$Boxed.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$OuterClass.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+  running jpf with args:
+JavaPathfinder core system v8.0 (rev 1a704e1d6c3d92178504f8cdfe57b068b4e22d9c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.test.mc.data.JSONTest.runTestMethod()
+
+====================================================== search started: 11/26/23, 2:36 PM
+[WARNING] orphan NativePeer method: jdk.internal.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;
+[WARNING] Value for field gov.nasa.jpf.test.mc.data.JSONTest$MultiArray.this$0 isn't specified
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 11/26/23, 2:36 PM
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

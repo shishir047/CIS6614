@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gov.nasa.jpf.util.LocationSpecTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-26T19:37:37" hostname="SHISHIRHP" time="0.009">
+  <properties/>
+  <testcase name="testOpenRange" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.007"/>
+  <testcase name="testWildcards" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.0"/>
+  <testcase name="testRelativeRange" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.001"/>
+  <testcase name="testPlatformLocation" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.0"/>
+  <testcase name="testSingleLocation" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.0"/>
+  <testcase name="testAbsoluteRange" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.001"/>
+  <testcase name="testRelativeLocation" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.0"/>
+  <testcase name="testAbsoluteLocation" classname="gov.nasa.jpf.util.LocationSpecTest" time="0.0"/>
+  <system-out><![CDATA[# testing: Foobar\.java:42-
+# testing: x/.*/Foo.*\.java:42
+# testing: Foobar\.java:42-48
+# testing: C:/x/y/z/Foobar\.java:42
+# testing: Foobar\.java:42
+# testing: Foobar\.java:42-48
+# testing: x/y/z/Foobar\.java:42
+# testing: /x/y/z/Foobar\.java:42
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
